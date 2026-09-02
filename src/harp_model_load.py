@@ -1,18 +1,35 @@
+import os
 from pathlib import Path
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 
 #MODEL_NAME = "Qwen/Qwen3-8B"
-DEFAULT_CACHE_DIR = "/home/mila/f/florian.carichon/scratch"
+DEFAULT_CACHE_DIR = os.environ.get(
+    "HF_HOME",
+    str(Path.home() / ".cache" / "huggingface"),
+)
 
 class HuggingFaceLLM:
 
-    def __init__(self, model_name: str = "Qwen/Qwen3-8B", cache_dir: str = DEFAULT_CACHE_DIR, thinking: bool = False, torch_dtype=torch.bfloat16, device_map="auto"):
+    def __init__(
+        self,
+        model_name: str = "Qwen/Qwen3-8B",
+        cache_dir: str = DEFAULT_CACHE_DIR,
+        thinking: bool = False,
+        torch_dtype=torch.bfloat16,
+        device_map="auto",
+        temperature: float = 0.7,
+        top_p: float = 0.9,
+        max_new_tokens: int = 512,
+    ):
         self.model_name = model_name
         self.cache_dir = cache_dir
         self.thinking = thinking
+        self.temperature = temperature
+        self.top_p = top_p
+        self.max_new_tokens = max_new_tokens
         self.tokenizer = AutoTokenizer.from_pretrained(model_name, cache_dir=cache_dir, trust_remote_code=True)
-        self.model = AutoModelForCausalLM.from_pretrained(model_name, cache_dir=cache_dir, torch_dtype=torch_dtype, device_map=device_map, trust_remote_code=True)
+        self.model = AutoModelForCausalLM.from_pretrained(model_name, cache_dir=cache_dir, dtype=torch_dtype, device_map=device_map, trust_remote_code=True)
 
     @property
     def name(self):
@@ -28,7 +45,11 @@ class HuggingFaceLLM:
         else:
             return self.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
         
-    def generate(self, system_prompt, user_prompt, temperature=0.7, top_p=0.9, max_new_tokens=1024):
+    def generate(self, system_prompt, user_prompt, temperature=None, top_p=None, max_new_tokens=None):
+
+        temperature = self.temperature if temperature is None else temperature
+        top_p = self.top_p if top_p is None else top_p
+        max_new_tokens = self.max_new_tokens if max_new_tokens is None else max_new_tokens
 
         messages = [{"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}]

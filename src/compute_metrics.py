@@ -8,11 +8,11 @@ def index_projects(projects: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
 
 def compute_agent_utilities(selected_projects: List[str], projects: List[Dict[str, Any]], agent_profiles: List[str]) -> Dict[str, float]:
     project_map = index_projects(projects)
-    utilities = {profile: 0.0 for profile in agent_profiles}
+    utilities = {f"A{i + 1}:{profile}": 0.0 for i, profile in enumerate(agent_profiles)}
     for pid in selected_projects:
         p = project_map[pid]
-        for profile in agent_profiles:
-            utilities[profile] += float(p["utility"].get(profile, 0))
+        for i, profile in enumerate(agent_profiles):
+            utilities[f"A{i + 1}:{profile}"] += float(p["utility"].get(profile, 0))
     return utilities
 
 
