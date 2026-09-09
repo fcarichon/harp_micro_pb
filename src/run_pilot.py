@@ -345,7 +345,7 @@ if __name__ == "__main__":
     parser.add_argument("--temperature", type=float, default=0.7)
     parser.add_argument("--top_p", type=float, default=0.9)
     parser.add_argument("--max_new_tokens", type=int, default=512)
-    parser.add_argument("--discussion_prompt_file", default="discussion_v2.txt", help="Filename under prompts/ used for pairwise discussion.")
+    parser.add_argument("--discussion_prompt_file", default="discussion_v3.txt", help="Filename under prompts/ used for pairwise discussion.")
     parser.add_argument("--skip_project_evaluations", action="store_true", help="Skip the independent rating stage, which is not used by deliberation.")
     args = parser.parse_args() 
     prompt_path = ROOT / "prompts"
