@@ -1,0 +1,216 @@
+{
+  "run_config": {
+    "timestamp_utc": "2026-09-27T12:25:49.154046+00:00",
+    "run_label": "EGQ_conflictual",
+    "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "profiles": [
+      "ecology",
+      "eco-growth",
+      "egalitarian"
+    ],
+    "project_ids": [
+      "P16",
+      "P23",
+      "P14",
+      "P18",
+      "P8"
+    ],
+    "intention": false,
+    "thinking": false,
+    "seed": 0,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_new_tokens": 512,
+    "discussion_prompt_file": "discussion_v3.txt",
+    "project_evaluations_skipped": true
+  },
+  "project_initial_evaluation": {
+    "A1": {},
+    "A2": {},
+    "A3": {}
+  },
+  "initial_votes": {
+    "A1": {
+      "stakeholder_group": "Eco-oriented stakeholders",
+      "vote": "{\"selected_projects\": [\"P16\", \"P23\"], \"justification\": \"These projects align with our priority for environmental sustainability and long-term ecological resilience. P16 enhances biodiversity and restores critical ecosystems, while P23 directly reduces pollution in disadvantaged communities, addressing environmental justice and improving public health. Together, they advance both ecological and social equity goals within the budget constraints.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P16",
+          "P23"
+        ],
+        "justification": "These projects align with our priority for environmental sustainability and long-term ecological resilience. P16 enhances biodiversity and restores critical ecosystems, while P23 directly reduces pollution in disadvantaged communities, addressing environmental justice and improving public health. Together, they advance both ecological and social equity goals within the budget constraints.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "Economic-growth stakeholders",
+      "vote": "{\"selected_projects\": [\"P14\", \"P18\"], \"justification\": \"P14, the Commercial Logistics & Freight Hub, will drive job creation, attract business investment, and enhance the city's economic productivity by improving goods movement and supporting commercial expansion. P18, the Neighborhood Infrastructure Equalization Fund, promotes long-term economic equity by upgrading underinvested areas, which strengthens local economies and creates construction and maintenance jobs. Together, these projects align with economic-growth priorities by stimulating business development, increasing workforce opportunities, and improving infrastructure to support sustained economic competitiveness.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P14",
+          "P18"
+        ],
+        "justification": "P14, the Commercial Logistics & Freight Hub, will drive job creation, attract business investment, and enhance the city's economic productivity by improving goods movement and supporting commercial expansion. P18, the Neighborhood Infrastructure Equalization Fund, promotes long-term economic equity by upgrading underinvested areas, which strengthens local economies and creates construction and maintenance jobs. Together, these projects align with economic-growth priorities by stimulating business development, increasing workforce opportunities, and improving infrastructure to support sustained economic competitiveness.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Social equity stakeholders",
+      "vote": "{\"selected_projects\": [\"P23\", \"P18\"], \"justification\": \"These projects directly address social equity by targeting environmental injustice in disadvantaged neighborhoods (P23) and rectifying historical underinvestment in infrastructure across underserved communities (P18), ensuring fairer distribution of public benefits and reducing systemic inequalities.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P23",
+          "P18"
+        ],
+        "justification": "These projects directly address social equity by targeting environmental injustice in disadvantaged neighborhoods (P23) and rectifying historical underinvestment in infrastructure across underserved communities (P18), ensuring fairer distribution of public benefits and reducing systemic inequalities.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "pairwise_discussions": [
+    {
+      "pair": [
+        "A1",
+        "A2"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "Eco-oriented stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal supports P18, which aligns with environmental equity by improving infrastructure in under-resourced areas—a benefit for long-term ecological and social resilience. However, P14 (Commercial Logistics & Freight Hub) directly contradicts environmental sustainability goals by promoting increased freight movement and infrastructure expansion that may raise emissions and fragment ecosystems.\n\n### 2. Response to the rationale  \nWhile economic growth and infrastructure equity are important, the justification for P14 overstates its environmental compatibility; it does not reduce emissions or support green infrastructure, and its construction and operation would likely increase pollution and land degradation.\n\n### 3. Concessions  \nProjects I am willing to give up: P14  \nProjects I insist on keeping: P16, P23  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P18 (as a partial compromise, if paired with environmental safeguards)\n\n### 5. Negotiation proposal  \nProposed final budget: P16, P23  \nJustification: P16 restores native habitats and enhances ecological resilience, while P23 directly reduces pollution in disadvantaged neighborhoods, addressing both environmental sustainability and environmental justice—core priorities for eco-oriented residents."
+        },
+        {
+          "speaker": "A2",
+          "stakeholder_group": "Economic-growth stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal to fund P16 and P23 supports environmental sustainability and equity, which are valuable goals. However, it does not advance economic growth, job creation, or business development—key priorities for my stakeholder group.\n\n### 2. Response to the rationale  \nWhile the environmental and social benefits of P16 and P23 are clear, they do not generate measurable economic growth or long-term productivity gains, which are central to our mandate.\n\n### 3. Concessions  \nProjects I am willing to give up: P16, P23  \nProjects I insist on keeping: none  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P14, P18, P8  \n\n### 5. Negotiation proposal  \nProposed final budget: P14, P18  \nJustification: P14 creates jobs, supports business expansion, and strengthens regional logistics; P18 reduces infrastructure disparities, improving economic conditions in underinvested areas—both directly advance long-term economic productivity and competitiveness."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A1",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "Eco-oriented stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P23, which aligns with my group’s focus on environmental sustainability and pollution reduction in vulnerable areas. However, it excludes P16, a project that directly advances biodiversity restoration and ecological resilience—core priorities for eco-oriented residents.\n\n### 2. Response to the rationale  \nWhile the emphasis on environmental justice through P23 and P18 is valid and important, the proposal overlooks the long-term ecological benefits of restoring native habitats and wildlife corridors, which are critical for climate resilience and biodiversity.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P16  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P23 (as it overlaps with environmental justice and pollution reduction)\n\n### 5. Negotiation proposal  \nProposed final budget: P16, P23  \nJustification: P16 advances ecological resilience and biodiversity, while P23 targets pollution in disadvantaged neighborhoods, combining environmental sustainability with targeted environmental justice—achieving both ecological and equity goals within budget constraints."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Social equity stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal supports two projects—P16 (Biodiversity Restoration) and P23 (Pollution Reduction in Disadvantaged Neighborhoods)—that directly advance environmental justice and reduce inequalities in access to clean environments. The only potential weakness is that it excludes P18, which explicitly targets infrastructure disparities in underserved communities, a core concern for social equity.\n\n### 2. Response to the rationale  \nThe argument that P16 and P23 advance both ecological and social equity goals is well-founded and aligns with our priorities, particularly P23’s focus on disadvantaged neighborhoods. However, P18 offers a more direct mechanism for addressing long-standing infrastructure inequities across neighborhoods.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P18  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P23, P16  \n\n### 5. Negotiation proposal  \nProposed final budget: P18, P23  \nJustification: P18 directly addresses historical underinvestment in infrastructure in underserved communities, fulfilling core social equity goals. P23 complements this by reducing pollution in disadvantaged areas, ensuring environmental justice and health improvements where they are most needed."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A2",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A2",
+          "stakeholder_group": "Economic-growth stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal to fund P23 and P18 addresses important equity concerns and may indirectly support economic development through improved community conditions. However, neither project directly advances job creation, business expansion, or long-term economic productivity—key priorities for economic-growth stakeholders.\n\n### 2. Response to the rationale  \nWhile the focus on environmental justice and infrastructure equity is valid, the economic-growth perspective requires projects that generate measurable economic returns, attract investment, and expand the city’s productive capacity.\n\n### 3. Concessions  \nProjects I am willing to give up: P23  \nProjects I insist on keeping: P14  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P18  \n\n### 5. Negotiation proposal  \nProposed final budget: P14, P18  \nJustification: P14 directly drives economic growth through job creation, business development, and logistics efficiency, while P18 improves infrastructure in underserved areas, which can enhance long-term economic productivity and support future private investment."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Social equity stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal includes P18, the Neighborhood Infrastructure Equalization Fund, which directly advances social equity by addressing historical underinvestment in disadvantaged areas. However, P14 (Commercial Logistics & Freight Hub) prioritizes economic growth over equity and may exacerbate environmental and social disparities if not carefully managed.  \n\n### 2. Response to the rationale  \nWhile P18 aligns with equity goals, P14’s focus on commercial expansion does not directly reduce inequality or expand public services for underserved communities. The justification conflates economic development with equitable outcomes, which are not equivalent.  \n\n### 3. Concessions  \nProjects I am willing to give up: P14  \nProjects I insist on keeping: P18, P23  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P23, P18  \n\n### 5. Negotiation proposal  \nProposed final budget: P18, P23  \nJustification: P18 reduces infrastructure disparities across neighborhoods, while P23 directly targets environmental injustice by cleaning up pollution in disadvantaged areas—both projects advance social equity, expand public benefits, and ensure fair distribution of resources."
+        }
+      ]
+    }
+  ],
+  "final_votes": {
+    "A1": {
+      "stakeholder_group": "Eco-oriented stakeholders",
+      "vote": "{\"selected_projects\": [\"P23\", \"P18\"], \"justification\": \"While P16 aligns with ecological resilience, the social equity representative's emphasis on P18 as a direct tool for addressing historical infrastructure disparities is compelling. P23 remains essential for environmental justice, reducing pollution in disadvantaged neighborhoods. By selecting P23 and P18, we uphold our core priorities of environmental sustainability and equity—particularly in health and access to clean environments—while also supporting a project that directly addresses systemic inequities in infrastructure. This compromise respects both the economic growth representative’s interest in development (through P18’s impact on underinvested areas) and the social equity group’s insistence on P18, increasing the likelihood of consensus. The resulting allocation is feasible, balanced, and advances shared goals across stakeholder groups.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P23",
+          "P18"
+        ],
+        "justification": "While P16 aligns with ecological resilience, the social equity representative's emphasis on P18 as a direct tool for addressing historical infrastructure disparities is compelling. P23 remains essential for environmental justice, reducing pollution in disadvantaged neighborhoods. By selecting P23 and P18, we uphold our core priorities of environmental sustainability and equity—particularly in health and access to clean environments—while also supporting a project that directly addresses systemic inequities in infrastructure. This compromise respects both the economic growth representative’s interest in development (through P18’s impact on underinvested areas) and the social equity group’s insistence on P18, increasing the likelihood of consensus. The resulting allocation is feasible, balanced, and advances shared goals across stakeholder groups.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "Economic-growth stakeholders",
+      "vote": "{\"selected_projects\": [\"P18\", \"P23\"], \"justification\": \"While P14 supports economic growth, the strong consensus from eco-oriented and social equity stakeholders against it—citing environmental harm and lack of direct equity benefits—highlights significant concerns that cannot be ignored. P18 and P23 together advance long-term economic competitiveness by upgrading underinvested neighborhoods and reducing environmental injustice, which strengthens local economies, creates jobs, and improves public health. These projects align with economic-growth priorities through infrastructure development and workforce opportunities, while also addressing equity and sustainability concerns that are critical for broad-based city resilience. Accepting this compromise ensures project funding and maintains momentum for future economic development, without sacrificing core economic goals.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P18",
+          "P23"
+        ],
+        "justification": "While P14 supports economic growth, the strong consensus from eco-oriented and social equity stakeholders against it—citing environmental harm and lack of direct equity benefits—highlights significant concerns that cannot be ignored. P18 and P23 together advance long-term economic competitiveness by upgrading underinvested neighborhoods and reducing environmental injustice, which strengthens local economies, creates jobs, and improves public health. These projects align with economic-growth priorities through infrastructure development and workforce opportunities, while also addressing equity and sustainability concerns that are critical for broad-based city resilience. Accepting this compromise ensures project funding and maintains momentum for future economic development, without sacrificing core economic goals.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Social equity stakeholders",
+      "vote": "{\"selected_projects\": [\"P23\", \"P18\"], \"justification\": \"I maintain my support for P23 and P18 as they directly advance social equity by addressing environmental injustice in disadvantaged neighborhoods and rectifying historical underinvestment in infrastructure. While I recognize the value of ecological restoration (P16) and economic growth (P14), the core mission of my stakeholder group—reducing inequality and ensuring fair access to public benefits—remains best served by prioritizing projects that deliver immediate, measurable improvements in the lives of underserved communities. The proposed compromise of P16 and P23, while ecologically sound, risks sidelining the infrastructure equity focus essential to my group’s priorities. Similarly, the P14 and P18 proposal, though economically oriented, does not sufficiently center environmental justice. Therefore, I uphold my initial proposal as the most consistent with our mandate, and I believe it offers a strong foundation for further negotiation that can be strengthened through mutual recognition of shared goals.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P23",
+          "P18"
+        ],
+        "justification": "I maintain my support for P23 and P18 as they directly advance social equity by addressing environmental injustice in disadvantaged neighborhoods and rectifying historical underinvestment in infrastructure. While I recognize the value of ecological restoration (P16) and economic growth (P14), the core mission of my stakeholder group—reducing inequality and ensuring fair access to public benefits—remains best served by prioritizing projects that deliver immediate, measurable improvements in the lives of underserved communities. The proposed compromise of P16 and P23, while ecologically sound, risks sidelining the infrastructure equity focus essential to my group’s priorities. Similarly, the P14 and P18 proposal, though economically oriented, does not sufficiently center environmental justice. Therefore, I uphold my initial proposal as the most consistent with our mandate, and I believe it offers a strong foundation for further negotiation that can be strengthened through mutual recognition of shared goals.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "orchestrator": {
+    "method": "deterministic_majority_aggregation",
+    "decision": {
+      "match": "agreement",
+      "final_vote": [
+        "P18",
+        "P23"
+      ],
+      "project_vote_counts": {
+        "P18": 3,
+        "P23": 3
+      }
+    }
+  },
+  "metrics": {
+    "selected_projects": [
+      "P18",
+      "P23"
+    ],
+    "total_cost": 100.0,
+    "budget": 100,
+    "feasible": true,
+    "budget_violation": 0.0,
+    "agent_utilities": {
+      "A1:Eco": 6.0,
+      "A2:Growth": 2.0,
+      "A3:Egalitarian": 10.0
+    },
+    "welfare": 6.0,
+    "min_utility": 2.0,
+    "optimal_welfare": 6.0,
+    "normalized_welfare": 1.0,
+    "regret": 0.0
+  }
+}

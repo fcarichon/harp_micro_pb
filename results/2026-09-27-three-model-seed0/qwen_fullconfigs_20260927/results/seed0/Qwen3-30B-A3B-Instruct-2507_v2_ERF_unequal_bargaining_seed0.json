@@ -1,0 +1,216 @@
+{
+  "run_config": {
+    "timestamp_utc": "2026-09-27T12:04:51.010516+00:00",
+    "run_label": "ERF_unequal_bargaining",
+    "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "profiles": [
+      "ecology",
+      "reputation",
+      "family"
+    ],
+    "project_ids": [
+      "P16",
+      "P20",
+      "P22",
+      "P1",
+      "P11"
+    ],
+    "intention": false,
+    "thinking": false,
+    "seed": 0,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_new_tokens": 512,
+    "discussion_prompt_file": "discussion_v3.txt",
+    "project_evaluations_skipped": true
+  },
+  "project_initial_evaluation": {
+    "A1": {},
+    "A2": {},
+    "A3": {}
+  },
+  "initial_votes": {
+    "A1": {
+      "stakeholder_group": "Eco-oriented stakeholders",
+      "vote": "{\"selected_projects\": [\"P1\", \"P11\"], \"justification\": \"These projects prioritize emissions reduction and sustainable transportation (P1) while expanding urban green spaces and safe, active mobility routes (P11), directly advancing environmental sustainability, ecological resilience, and long-term climate goals.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P1",
+          "P11"
+        ],
+        "justification": "These projects prioritize emissions reduction and sustainable transportation (P1) while expanding urban green spaces and safe, active mobility routes (P11), directly advancing environmental sustainability, ecological resilience, and long-term climate goals.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "City branding stakeholders",
+      "vote": "{\"selected_projects\": [\"P20\", \"P11\"], \"justification\": \"P20 enhances the city's international reputation as a leader in sustainable innovation, directly boosting visibility and prestige. P11 strengthens community well-being and urban livability, contributing to the city's attractiveness and positive image. Together, they align with branding priorities by improving both global recognition and local quality of life, reinforcing the city’s identity as forward-thinking and people-centered.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P20",
+          "P11"
+        ],
+        "justification": "P20 enhances the city's international reputation as a leader in sustainable innovation, directly boosting visibility and prestige. P11 strengthens community well-being and urban livability, contributing to the city's attractiveness and positive image. Together, they align with branding priorities by improving both global recognition and local quality of life, reinforcing the city’s identity as forward-thinking and people-centered.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Families with young children stakeholders",
+      "vote": "{\"selected_projects\": [\"P22\", \"P11\"], \"justification\": \"These projects directly support families with young children by improving safe, green outdoor spaces for children to play and learn. P22 enhances schoolyards with natural environments that promote child well-being and environmental education, while P11 creates safe, accessible routes to schools and neighborhood parks, increasing safety and encouraging active transportation for families.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P22",
+          "P11"
+        ],
+        "justification": "These projects directly support families with young children by improving safe, green outdoor spaces for children to play and learn. P22 enhances schoolyards with natural environments that promote child well-being and environmental education, while P11 creates safe, accessible routes to schools and neighborhood parks, increasing safety and encouraging active transportation for families.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "pairwise_discussions": [
+    {
+      "pair": [
+        "A1",
+        "A2"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "Eco-oriented stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal includes P11, which supports green infrastructure, urban greening, and ecological resilience—strongly aligned with eco-oriented priorities. However, P20, while symbolic, does not directly advance environmental sustainability or emissions reduction beyond visibility; it is less impactful on actual ecological outcomes than other projects.  \n\n### 2. Response to the rationale  \nWhile enhancing city branding is valuable, the justification for P20 relies on image rather than measurable environmental benefit, which does not align with ecological priorities. P11, however, directly supports biodiversity, green space expansion, and community resilience—key goals for eco-oriented residents.  \n\n### 3. Concessions  \nProjects I am willing to give up: P20  \nProjects I insist on keeping: P1, P11, P16, P22  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P1, P11, P16, P22  \n\n### 5. Negotiation proposal  \nProposed final budget: P11, P22  \nJustification: P11 expands urban green space and safe routes, enhancing biodiversity and community well-being. P22 transforms schoolyards into green, biodiverse areas, directly increasing urban vegetation and ecological resilience—both projects deliver tangible environmental benefits."
+        },
+        {
+          "speaker": "A2",
+          "stakeholder_group": "City branding stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes sustainable transportation and urban greening, which contribute to environmental resilience and long-term climate goals. However, it lacks a project with strong international visibility or symbolic prestige, which are central to city branding.\n\n### 2. Response to the rationale  \nWhile the focus on emissions reduction and active mobility is valuable, the absence of a high-visibility landmark limits the city’s potential to gain external recognition and global attention—key objectives for city branding.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P20  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P11  \n\n### 5. Negotiation proposal  \nProposed final budget: P20, P11  \nJustification: P20 establishes the city as a global leader in sustainable design through a landmark with international visibility, while P11 expands urban green spaces and safe mobility routes, enhancing both ecological value and public appeal—aligning with branding goals and broad community benefits."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A1",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "Eco-oriented stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P22 and P11, both of which align with ecological resilience, urban greening, and biodiversity enhancement—key concerns for eco-oriented residents. However, it omits projects with stronger emissions reduction potential, such as P1 (Green Public Transit Expansion).  \n\n### 2. Response to the rationale  \nThe emphasis on safe, green spaces for children is valid and supports long-term environmental stewardship through education and community engagement. These benefits are consistent with ecological sustainability, particularly when combined with broader urban greening.  \n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P22, P11  \n\n### 4. Acceptable alternatives  \nProjects I would accept: none (P22 and P11 are sufficient and aligned)  \n\n### 5. Negotiation proposal  \nProposed final budget: P22, P11  \nJustification: These projects deliver strong environmental co-benefits—increasing urban biodiversity, enhancing green infrastructure, and supporting ecological resilience—while also serving community well-being in ways consistent with long-term sustainability goals."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Families with young children stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes green public transit (P1) and safe school routes with urban parks (P11), which enhance family safety and access to green spaces—benefits that align with our focus on children’s well-being and neighborhood safety. However, it does not directly address childcare access or housing stability, which are central to our priorities.\n\n### 2. Response to the rationale  \nWhile the environmental and mobility benefits are valuable, the proposal does not sufficiently target the immediate needs of families with young children, such as expanded childcare infrastructure or direct support for family housing stability.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: none (open to compromise if alternatives meet family needs)\n\n### 4. Acceptable alternatives  \nProjects I would accept: P22 (Green Schoolyard Transformation), P11 (Urban Parks & Safe School Routes)\n\n### 5. Negotiation proposal  \nProposed final budget: P11, P22  \nJustification: These projects directly improve safe, green outdoor spaces for children and families, support child development through nature-based play, and strengthen neighborhood safety—addressing core priorities for families with young children while remaining within the $100 million budget."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A2",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A2",
+          "stakeholder_group": "City branding stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P22 and P11, both of which contribute to green urban spaces and long-term environmental resilience—benefits that align with city branding through enhanced ecological stewardship and visual appeal. However, neither project is explicitly designed to elevate the city’s international reputation or visibility as a global innovation leader.\n\n### 2. Response to the rationale  \nThe focus on child well-being and safe school routes is valid and important, but it does not directly advance the city’s external image or global recognition, which are central to my stakeholder group’s priorities.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P20  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P11, P22  \n\n### 5. Negotiation proposal  \nProposed final budget: P20, P11  \nJustification: P20 establishes a globally visible, iconic landmark that positions the city as a leader in sustainable innovation, directly enhancing international reputation. P11 complements this by improving urban green infrastructure and connectivity, contributing to a more attractive and livable city image."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Families with young children stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal includes P11, which supports neighborhood parks, safe routes to schools, and green spaces—directly benefiting family well-being, child safety, and everyday life for families. However, P20 is a high-cost landmark focused on international branding, which does not directly address childcare, housing stability, or family services.  \n\n### 2. Response to the rationale  \nWhile enhancing city branding is valuable, the primary goal of participatory budgeting is to improve residents’ daily lives. P11 is a strong choice for families, but P20 offers no measurable benefit to young children, families, or housing stability.  \n\n### 3. Concessions  \nProjects I am willing to give up: P20  \nProjects I insist on keeping: P11  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P22, P1, P16  \n\n### 5. Negotiation proposal  \nProposed final budget: P11, P22  \nJustification: P11 improves safe access to schools and neighborhood green spaces, directly supporting family safety and well-being. P22 transforms schoolyards into green, child-friendly spaces, enhancing outdoor learning and play—key priorities for families with young children."
+        }
+      ]
+    }
+  ],
+  "final_votes": {
+    "A1": {
+      "stakeholder_group": "Eco-oriented stakeholders",
+      "vote": "{\"selected_projects\": [\"P11\", \"P22\"], \"justification\": \"While I prioritize emissions reduction and long-term ecological resilience, the arguments from families with young children highlight the urgent need for direct improvements in safe, green spaces for children. P11 and P22 together deliver strong environmental benefits—urban greening, biodiversity, and safe mobility—while directly addressing the well-being of children and families. This combination maintains a clear environmental focus, supports ecological resilience, and fosters broad consensus. It is a feasible and inclusive compromise that advances sustainability while meeting critical community needs, increasing the likelihood of a shared, successful outcome.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P11",
+          "P22"
+        ],
+        "justification": "While I prioritize emissions reduction and long-term ecological resilience, the arguments from families with young children highlight the urgent need for direct improvements in safe, green spaces for children. P11 and P22 together deliver strong environmental benefits—urban greening, biodiversity, and safe mobility—while directly addressing the well-being of children and families. This combination maintains a clear environmental focus, supports ecological resilience, and fosters broad consensus. It is a feasible and inclusive compromise that advances sustainability while meeting critical community needs, increasing the likelihood of a shared, successful outcome.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "City branding stakeholders",
+      "vote": "{\"selected_projects\": [\"P11\", \"P22\"], \"justification\": \"While P20 aligns with city branding goals, both eco-oriented and family stakeholders have compellingly argued that P11 and P22 deliver more direct, measurable benefits to biodiversity, community well-being, and child-centered urban environments. P11 supports safe, green infrastructure connecting neighborhoods to schools—valuable for both ecological resilience and family safety. P22 transforms schoolyards into biodiverse, child-friendly spaces, directly enhancing urban greening and quality of life. Together, these projects maintain strong alignment with city branding through visible, positive urban transformation and community engagement, while achieving broader consensus. This compromise preserves core elements of the city's reputation as innovative and people-centered, without sacrificing feasibility or stakeholder support.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P11",
+          "P22"
+        ],
+        "justification": "While P20 aligns with city branding goals, both eco-oriented and family stakeholders have compellingly argued that P11 and P22 deliver more direct, measurable benefits to biodiversity, community well-being, and child-centered urban environments. P11 supports safe, green infrastructure connecting neighborhoods to schools—valuable for both ecological resilience and family safety. P22 transforms schoolyards into biodiverse, child-friendly spaces, directly enhancing urban greening and quality of life. Together, these projects maintain strong alignment with city branding through visible, positive urban transformation and community engagement, while achieving broader consensus. This compromise preserves core elements of the city's reputation as innovative and people-centered, without sacrificing feasibility or stakeholder support.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Families with young children stakeholders",
+      "vote": "{\"selected_projects\": [\"P22\", \"P11\"], \"justification\": \"These projects directly address the core needs of families with young children by creating safe, green, and accessible outdoor spaces for play, learning, and active transportation. P22 transforms schoolyards into natural environments that support child development and environmental education, while P11 ensures safe, protected routes to schools and neighborhood parks—critical for family well-being and daily mobility. Although other stakeholders emphasize branding and emissions reduction, P22 and P11 still deliver strong ecological and community benefits, including biodiversity, urban greening, and long-term sustainability. Given that these projects align with both my group’s priorities and the broader environmental goals highlighted by other representatives, they represent a balanced and feasible solution that supports all stakeholders without compromising essential family-focused outcomes.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P22",
+          "P11"
+        ],
+        "justification": "These projects directly address the core needs of families with young children by creating safe, green, and accessible outdoor spaces for play, learning, and active transportation. P22 transforms schoolyards into natural environments that support child development and environmental education, while P11 ensures safe, protected routes to schools and neighborhood parks—critical for family well-being and daily mobility. Although other stakeholders emphasize branding and emissions reduction, P22 and P11 still deliver strong ecological and community benefits, including biodiversity, urban greening, and long-term sustainability. Given that these projects align with both my group’s priorities and the broader environmental goals highlighted by other representatives, they represent a balanced and feasible solution that supports all stakeholders without compromising essential family-focused outcomes.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "orchestrator": {
+    "method": "deterministic_majority_aggregation",
+    "decision": {
+      "match": "agreement",
+      "final_vote": [
+        "P11",
+        "P22"
+      ],
+      "project_vote_counts": {
+        "P11": 3,
+        "P22": 3
+      }
+    }
+  },
+  "metrics": {
+    "selected_projects": [
+      "P11",
+      "P22"
+    ],
+    "total_cost": 100.0,
+    "budget": 100,
+    "feasible": true,
+    "budget_violation": 0.0,
+    "agent_utilities": {
+      "A1:Eco": 10.0,
+      "A2:Reputation": 4.0,
+      "A3:Family": 10.0
+    },
+    "welfare": 8.0,
+    "min_utility": 4.0,
+    "optimal_welfare": 8.333333333333334,
+    "normalized_welfare": 0.96,
+    "regret": 0.3333333333333339
+  }
+}

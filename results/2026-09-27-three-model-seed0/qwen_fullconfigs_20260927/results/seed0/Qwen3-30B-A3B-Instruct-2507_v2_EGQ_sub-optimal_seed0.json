@@ -1,0 +1,218 @@
+{
+  "run_config": {
+    "timestamp_utc": "2026-09-27T12:23:21.778990+00:00",
+    "run_label": "EGQ_sub-optimal",
+    "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "profiles": [
+      "ecology",
+      "eco-growth",
+      "egalitarian"
+    ],
+    "project_ids": [
+      "P16",
+      "P14",
+      "P18",
+      "P21",
+      "P23"
+    ],
+    "intention": false,
+    "thinking": false,
+    "seed": 0,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_new_tokens": 512,
+    "discussion_prompt_file": "discussion_v3.txt",
+    "project_evaluations_skipped": true
+  },
+  "project_initial_evaluation": {
+    "A1": {},
+    "A2": {},
+    "A3": {}
+  },
+  "initial_votes": {
+    "A1": {
+      "stakeholder_group": "Eco-oriented stakeholders",
+      "vote": "{\"selected_projects\": [\"P16\", \"P21\"], \"justification\": \"As eco-oriented residents, we prioritize long-term environmental sustainability and emissions reduction. P16 enhances biodiversity and ecological resilience, while P21 directly reduces industrial emissions through renewable energy upgrades, aligning with our core values of clean technology and environmental protection.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P16",
+          "P21"
+        ],
+        "justification": "As eco-oriented residents, we prioritize long-term environmental sustainability and emissions reduction. P16 enhances biodiversity and ecological resilience, while P21 directly reduces industrial emissions through renewable energy upgrades, aligning with our core values of clean technology and environmental protection.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "Economic-growth stakeholders",
+      "vote": "{\"selected_projects\": [\"P14\", \"P21\"], \"justification\": \"P14 supports economic growth by enhancing commercial logistics and attracting business investment, while P21 boosts industrial productivity and competitiveness through renewable energy upgrades, creating jobs and strengthening long-term economic output.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P14",
+          "P21"
+        ],
+        "justification": "P14 supports economic growth by enhancing commercial logistics and attracting business investment, while P21 boosts industrial productivity and competitiveness through renewable energy upgrades, creating jobs and strengthening long-term economic output.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Social equity stakeholders",
+      "vote": "{\"selected_projects\": [\"P18\", \"P23\"], \"justification\": \"These projects directly address social equity by targeting historical underinvestment in marginalized communities (P18) and reducing environmental injustices in disadvantaged neighborhoods (P23). Together, they advance fairness, improve access to quality infrastructure and clean environments, and help close long-standing gaps in public service delivery, aligning with core principles of social equity.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P18",
+          "P23"
+        ],
+        "justification": "These projects directly address social equity by targeting historical underinvestment in marginalized communities (P18) and reducing environmental injustices in disadvantaged neighborhoods (P23). Together, they advance fairness, improve access to quality infrastructure and clean environments, and help close long-standing gaps in public service delivery, aligning with core principles of social equity.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "pairwise_discussions": [
+    {
+      "pair": [
+        "A1",
+        "A2"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "Eco-oriented stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal supports P21, which aligns with environmental sustainability by reducing industrial emissions through renewable energy upgrades. However, P14 prioritizes commercial freight expansion, which increases emissions and infrastructure strain, conflicting with ecological resilience goals.  \n\n### 2. Response to the rationale  \nWhile P21 does support clean industrial transition, P14’s focus on freight logistics undermines long-term environmental sustainability by encouraging increased vehicle traffic and fossil fuel dependence, contrary to ecological priorities.  \n\n### 3. Concessions  \nProjects I am willing to give up: P14  \nProjects I insist on keeping: P21, P23, P16  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P21, P16, P23  \n\n### 5. Negotiation proposal  \nProposed final budget: P16, P21  \nJustification: P16 restores native ecosystems and enhances biodiversity, while P21 reduces industrial emissions and strengthens clean energy adoption—both directly advancing environmental sustainability and ecological resilience within budget constraints."
+        },
+        {
+          "speaker": "A2",
+          "stakeholder_group": "Economic-growth stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal to fund P16 (Biodiversity Restoration) and P21 (Renewable Energy Industrial Upgrade) includes P21, which supports industrial productivity and innovation—key priorities for economic-growth stakeholders. However, P16 does not directly advance job creation, business development, or infrastructure expansion, and offers limited economic return compared to other options.  \n\n### 2. Response to the rationale  \nWhile environmental sustainability is valuable, the justification prioritizes ecological outcomes over economic productivity, which does not fully align with the core goals of economic-growth stakeholders.  \n\n### 3. Concessions  \nProjects I am willing to give up: P16  \nProjects I insist on keeping: P21  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P14, P18, P23  \n\n### 5. Negotiation proposal  \nProposed final budget: P14, P21  \nJustification: P14 (Commercial Logistics & Freight Hub) directly supports business expansion, job creation, and regional economic competitiveness, while P21 enhances industrial productivity and innovation—both projects align with long-term economic growth and investment attraction."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A1",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "Eco-oriented stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal’s strength lies in addressing environmental injustice through P23, which aligns with ecological equity. However, P18 prioritizes commercial logistics over environmental sustainability, which contradicts eco-oriented priorities.  \n\n### 2. Response to the rationale  \nWhile advancing social equity is important, the focus on P18 as a vehicle for equity overlooks its potential to increase emissions and infrastructure strain, undermining long-term ecological resilience.  \n\n### 3. Concessions  \nProjects I am willing to give up: P18  \nProjects I insist on keeping: P23  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P16, P21  \n\n### 5. Negotiation proposal  \nProposed final budget: P16, P23  \nJustification: P16 restores native ecosystems and enhances biodiversity and resilience, while P23 directly reduces pollution in disadvantaged neighborhoods—both projects advance environmental sustainability and ecological justice without compromising the budget."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Social equity stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P16 (biodiversity restoration) and P21 (renewable energy industrial upgrade), both of which contribute to environmental sustainability and long-term resilience. However, it does not address systemic inequities in access to public services or environmental burdens in underserved communities, which are central to social equity priorities.\n\n### 2. Response to the rationale  \nWhile the focus on environmental sustainability is valuable, the justification overlooks the disproportionate environmental and health burdens faced by disadvantaged neighborhoods, which are directly addressed by P23 and P18.\n\n### 3. Concessions  \nProjects I am willing to give up: P21  \nProjects I insist on keeping: P18, P23  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P16  \n\n### 5. Negotiation proposal  \nProposed final budget: P16, P23  \nJustification: P16 supports ecological resilience, while P23 directly targets pollution in disadvantaged neighborhoods, advancing both environmental and social equity goals. This combination ensures that marginalized communities benefit from pollution reduction while maintaining biodiversity restoration."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A2",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A2",
+          "stakeholder_group": "Economic-growth stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P18 and P23, which align with economic growth through enhanced logistics infrastructure and improved conditions for business activity in underserved areas. However, P23’s focus on pollution reduction, while valuable, has limited direct impact on job creation or business competitiveness compared to other projects.\n\n### 2. Response to the rationale  \nThe social equity argument for P18 and P23 is valid, but it overemphasizes equity outcomes without fully accounting for the stronger economic productivity gains from projects that directly expand business capacity and innovation.\n\n### 3. Concessions  \nProjects I am willing to give up: P23  \nProjects I insist on keeping: P14, P21  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P18, P16  \n\n### 5. Negotiation proposal  \nProposed final budget: P14, P21  \nJustification: P14 enhances commercial logistics and supports business expansion, while P21 drives industrial modernization, boosts productivity, and creates jobs—both directly advancing economic growth and long-term competitiveness."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Social equity stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal supports two high-impact projects—P14 and P21—that advance economic growth and industrial modernization. However, it does not address social equity, environmental justice, or historical disparities in public investment, which are central to our priorities.\n\n### 2. Response to the rationale  \nWhile economic growth and industrial efficiency are important, they do not inherently reduce inequality or improve conditions in underserved communities. The justification overlooks the fact that economic gains can be concentrated and may not benefit marginalized neighborhoods without targeted intervention.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P18, P23  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P16, P21  \n\n### 5. Negotiation proposal  \nProposed final budget: P18, P23  \nJustification: P18 and P23 directly address historical underinvestment and environmental injustice by equitably upgrading infrastructure and cleaning up pollution in disadvantaged neighborhoods—core priorities for social equity."
+        }
+      ]
+    }
+  ],
+  "final_votes": {
+    "A1": {
+      "stakeholder_group": "Eco-oriented stakeholders",
+      "vote": "{\"selected_projects\": [\"P16\", \"P23\"], \"justification\": \"While I prioritize environmental sustainability and emissions reduction, the arguments from social equity stakeholders highlight the urgent need to address disproportionate pollution burdens in disadvantaged neighborhoods. P23 directly targets environmental injustice and complements P16’s ecological restoration by ensuring that environmental benefits are equitably distributed. This combination strengthens both ecological resilience and social fairness, aligning with long-term sustainability and inclusive development. I remain committed to core environmental values while advancing a compromise that acknowledges the legitimacy of equity concerns, increasing the likelihood of broad consensus and successful project funding.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P16",
+          "P23"
+        ],
+        "justification": "While I prioritize environmental sustainability and emissions reduction, the arguments from social equity stakeholders highlight the urgent need to address disproportionate pollution burdens in disadvantaged neighborhoods. P23 directly targets environmental injustice and complements P16’s ecological restoration by ensuring that environmental benefits are equitably distributed. This combination strengthens both ecological resilience and social fairness, aligning with long-term sustainability and inclusive development. I remain committed to core environmental values while advancing a compromise that acknowledges the legitimacy of equity concerns, increasing the likelihood of broad consensus and successful project funding.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "Economic-growth stakeholders",
+      "vote": "{\"selected_projects\": [\"P21\", \"P16\"], \"justification\": \"While P14 supports economic growth through logistics expansion, its environmental trade-offs are significant and conflict with broader sustainability goals. P21 aligns with my stakeholder group’s priorities by boosting industrial productivity, attracting investment, and creating jobs through renewable energy upgrades. P16, though primarily ecological, enhances long-term economic resilience by improving ecosystem services and climate adaptation—key enablers of sustainable economic development. This combination maintains strong economic growth momentum while addressing environmental concerns, making it a feasible compromise that respects both ecological sustainability and economic competitiveness.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P21",
+          "P16"
+        ],
+        "justification": "While P14 supports economic growth through logistics expansion, its environmental trade-offs are significant and conflict with broader sustainability goals. P21 aligns with my stakeholder group’s priorities by boosting industrial productivity, attracting investment, and creating jobs through renewable energy upgrades. P16, though primarily ecological, enhances long-term economic resilience by improving ecosystem services and climate adaptation—key enablers of sustainable economic development. This combination maintains strong economic growth momentum while addressing environmental concerns, making it a feasible compromise that respects both ecological sustainability and economic competitiveness.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Social equity stakeholders",
+      "vote": "{\"selected_projects\": [\"P18\", \"P23\"], \"justification\": \"While the eco-oriented representative raises valid concerns about P18’s environmental impact, the project remains central to addressing historical underinvestment in marginalized neighborhoods through targeted infrastructure equalization. P23 directly confronts environmental injustice by prioritizing pollution reduction in disadvantaged communities, a core social equity imperative. Together, they deliver measurable progress on both infrastructure equity and environmental health. Although the economic-growth representative favors P14 and P21, the combination of P18 and P23 ensures that social equity is not sacrificed for economic expansion. I maintain this proposal as it best reflects my group’s priorities, while recognizing that compromise requires balancing competing values. This allocation advances fairness and inclusion without exceeding the budget, and remains the most justifiable outcome for social equity stakeholders.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P18",
+          "P23"
+        ],
+        "justification": "While the eco-oriented representative raises valid concerns about P18’s environmental impact, the project remains central to addressing historical underinvestment in marginalized neighborhoods through targeted infrastructure equalization. P23 directly confronts environmental injustice by prioritizing pollution reduction in disadvantaged communities, a core social equity imperative. Together, they deliver measurable progress on both infrastructure equity and environmental health. Although the economic-growth representative favors P14 and P21, the combination of P18 and P23 ensures that social equity is not sacrificed for economic expansion. I maintain this proposal as it best reflects my group’s priorities, while recognizing that compromise requires balancing competing values. This allocation advances fairness and inclusion without exceeding the budget, and remains the most justifiable outcome for social equity stakeholders.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "orchestrator": {
+    "method": "deterministic_majority_aggregation",
+    "decision": {
+      "match": "non_agreement",
+      "final_vote": [
+        "P16",
+        "P23"
+      ],
+      "project_vote_counts": {
+        "P16": 2,
+        "P18": 1,
+        "P21": 1,
+        "P23": 2
+      }
+    }
+  },
+  "metrics": {
+    "selected_projects": [
+      "P16",
+      "P23"
+    ],
+    "total_cost": 100.0,
+    "budget": 100,
+    "feasible": true,
+    "budget_violation": 0.0,
+    "agent_utilities": {
+      "A1:Eco": 10.0,
+      "A2:Growth": 2.0,
+      "A3:Egalitarian": 6.0
+    },
+    "welfare": 6.0,
+    "min_utility": 2.0,
+    "optimal_welfare": 7.333333333333333,
+    "normalized_welfare": 0.8181818181818182,
+    "regret": 1.333333333333333
+  }
+}

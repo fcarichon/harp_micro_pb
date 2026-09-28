@@ -1,0 +1,1087 @@
+{
+  "results_dir": "crossmodels_20260927/results/llama8b_seed0",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "required_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "expected_runs": 60,
+  "found_runs": 60,
+  "checked_runs": 60,
+  "diagnostic_mismatches": 0,
+  "missing_by_count": 0,
+  "status": "complete",
+  "diagnostics_complete": true,
+  "observations": {
+    "calls": 720,
+    "reached_max_new_tokens": 0,
+    "ended_with_eos": 720,
+    "response_parse_errors": 0,
+    "empty_returned_text": 0
+  },
+  "runtime_variants": [
+    {
+      "runs": 60,
+      "backend": "llama",
+      "model_class": "LlamaForCausalLM",
+      "tokenizer_class": "TokenizersBackend",
+      "processor_class": null,
+      "device_map": null,
+      "dtype": "torch.bfloat16",
+      "thinking": false,
+      "tokenization": "chat_template_tokenize_once",
+      "response_handling": "decode skip_special_tokens; no reasoning-tag stripping",
+      "effective_generation_config": {
+        "max_length": null,
+        "max_new_tokens": 512,
+        "min_length": null,
+        "min_new_tokens": null,
+        "early_stopping": null,
+        "max_time": null,
+        "stop_strings": null,
+        "do_sample": true,
+        "num_beams": null,
+        "use_mtp": null,
+        "use_cache": null,
+        "cache_implementation": null,
+        "cache_config": null,
+        "max_cache_len": null,
+        "temperature": 0.7,
+        "top_k": null,
+        "top_p": 0.9,
+        "min_p": null,
+        "top_h": null,
+        "typical_p": null,
+        "epsilon_cutoff": null,
+        "eta_cutoff": null,
+        "repetition_penalty": null,
+        "encoder_repetition_penalty": null,
+        "length_penalty": null,
+        "no_repeat_ngram_size": null,
+        "bad_words_ids": null,
+        "renormalize_logits": null,
+        "forced_bos_token_id": null,
+        "forced_eos_token_id": null,
+        "remove_invalid_values": null,
+        "exponential_decay_length_penalty": null,
+        "suppress_tokens": null,
+        "begin_suppress_tokens": null,
+        "sequence_bias": null,
+        "token_healing": null,
+        "guidance_scale": null,
+        "watermarking_config": null,
+        "num_return_sequences": null,
+        "output_attentions": null,
+        "output_hidden_states": null,
+        "output_scores": null,
+        "output_logits": null,
+        "return_dict_in_generate": null,
+        "pad_token_id": 128009,
+        "bos_token_id": 128000,
+        "eos_token_id": [
+          128001,
+          128008,
+          128009
+        ],
+        "encoder_no_repeat_ngram_size": null,
+        "decoder_start_token_id": null,
+        "is_assistant": null,
+        "num_assistant_tokens": null,
+        "num_assistant_tokens_schedule": null,
+        "assistant_confidence_threshold": null,
+        "prompt_lookup_num_tokens": null,
+        "max_matching_ngram_size": null,
+        "assistant_early_exit": null,
+        "assistant_lookbehind": null,
+        "target_lookbehind": null,
+        "assistant_ensemble_weight": null,
+        "compile_config": null,
+        "disable_compile": null,
+        "continuous_batching_config": null,
+        "low_memory": null,
+        "penalty_alpha": null,
+        "dola_layers": null,
+        "diversity_penalty": null,
+        "num_beam_groups": null,
+        "constraints": null,
+        "force_words_ids": null,
+        "prefill_chunk_size": null,
+        "_from_model_config": null,
+        "transformers_version": "5.14.1"
+      },
+      "inherited_generation_settings": {
+        "max_length": null,
+        "min_length": null,
+        "min_new_tokens": null,
+        "early_stopping": null,
+        "max_time": null,
+        "stop_strings": null,
+        "num_beams": null,
+        "use_mtp": null,
+        "use_cache": null,
+        "cache_implementation": null,
+        "cache_config": null,
+        "max_cache_len": null,
+        "top_k": null,
+        "min_p": null,
+        "top_h": null,
+        "typical_p": null,
+        "epsilon_cutoff": null,
+        "eta_cutoff": null,
+        "repetition_penalty": null,
+        "encoder_repetition_penalty": null,
+        "length_penalty": null,
+        "no_repeat_ngram_size": null,
+        "bad_words_ids": null,
+        "renormalize_logits": null,
+        "forced_bos_token_id": null,
+        "forced_eos_token_id": null,
+        "remove_invalid_values": null,
+        "exponential_decay_length_penalty": null,
+        "suppress_tokens": null,
+        "begin_suppress_tokens": null,
+        "sequence_bias": null,
+        "token_healing": null,
+        "guidance_scale": null,
+        "watermarking_config": null,
+        "num_return_sequences": null,
+        "output_attentions": null,
+        "output_hidden_states": null,
+        "output_scores": null,
+        "output_logits": null,
+        "return_dict_in_generate": null,
+        "bos_token_id": 128000,
+        "eos_token_id": [
+          128001,
+          128008,
+          128009
+        ],
+        "encoder_no_repeat_ngram_size": null,
+        "decoder_start_token_id": null,
+        "is_assistant": null,
+        "num_assistant_tokens": null,
+        "num_assistant_tokens_schedule": null,
+        "assistant_confidence_threshold": null,
+        "prompt_lookup_num_tokens": null,
+        "max_matching_ngram_size": null,
+        "assistant_early_exit": null,
+        "assistant_lookbehind": null,
+        "target_lookbehind": null,
+        "assistant_ensemble_weight": null,
+        "compile_config": null,
+        "disable_compile": null,
+        "continuous_batching_config": null,
+        "low_memory": null,
+        "penalty_alpha": null,
+        "dola_layers": null,
+        "diversity_penalty": null,
+        "num_beam_groups": null,
+        "constraints": null,
+        "force_words_ids": null,
+        "prefill_chunk_size": null,
+        "_from_model_config": null,
+        "transformers_version": "5.14.1"
+      }
+    }
+  ],
+  "entries": [
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EFQ_coalition_seed0.json",
+      "scenario": "EFQ_coalition",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EFQ_conflictual_seed0.json",
+      "scenario": "EFQ_conflictual",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EFQ_impossible_seed0.json",
+      "scenario": "EFQ_impossible",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EFQ_optimal_seed0.json",
+      "scenario": "EFQ_optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EFQ_sub-optimal_seed0.json",
+      "scenario": "EFQ_sub-optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EFQ_unequal_bargaining_seed0.json",
+      "scenario": "EFQ_unequal_bargaining",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EGF_coalition_seed0.json",
+      "scenario": "EGF_coalition",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EGF_conflictual_seed0.json",
+      "scenario": "EGF_conflictual",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EGF_impossible_seed0.json",
+      "scenario": "EGF_impossible",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EGF_optimal_seed0.json",
+      "scenario": "EGF_optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EGF_sub-optimal_seed0.json",
+      "scenario": "EGF_sub-optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EGF_unequal_bargaining_seed0.json",
+      "scenario": "EGF_unequal_bargaining",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EGQ_coalition_seed0.json",
+      "scenario": "EGQ_coalition",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EGQ_conflictual_seed0.json",
+      "scenario": "EGQ_conflictual",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EGQ_impossible_seed0.json",
+      "scenario": "EGQ_impossible",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EGQ_optimal_seed0.json",
+      "scenario": "EGQ_optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EGQ_sub-optimal_seed0.json",
+      "scenario": "EGQ_sub-optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_EGQ_unequal_bargaining_seed0.json",
+      "scenario": "EGQ_unequal_bargaining",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERF_coalition_seed0.json",
+      "scenario": "ERF_coalition",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERF_conflictual_seed0.json",
+      "scenario": "ERF_conflictual",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERF_impossible_seed0.json",
+      "scenario": "ERF_impossible",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERF_optimal_seed0.json",
+      "scenario": "ERF_optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERF_sub-optimal_seed0.json",
+      "scenario": "ERF_sub-optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERF_unequal_bargaining_seed0.json",
+      "scenario": "ERF_unequal_bargaining",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERG_coalition_seed0.json",
+      "scenario": "ERG_coalition",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERG_conflictual_seed0.json",
+      "scenario": "ERG_conflictual",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERG_impossible_seed0.json",
+      "scenario": "ERG_impossible",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERG_optimal_seed0.json",
+      "scenario": "ERG_optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERG_sub-optimal_seed0.json",
+      "scenario": "ERG_sub-optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERG_unequal_bargaining_seed0.json",
+      "scenario": "ERG_unequal_bargaining",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERQ_coalition_seed0.json",
+      "scenario": "ERQ_coalition",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERQ_conflictual_seed0.json",
+      "scenario": "ERQ_conflictual",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERQ_impossible_seed0.json",
+      "scenario": "ERQ_impossible",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERQ_optimal_seed0.json",
+      "scenario": "ERQ_optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERQ_sub-optimal_seed0.json",
+      "scenario": "ERQ_sub-optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_ERQ_unequal_bargaining_seed0.json",
+      "scenario": "ERQ_unequal_bargaining",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_GFQ_coalition_seed0.json",
+      "scenario": "GFQ_coalition",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_GFQ_conflictual_seed0.json",
+      "scenario": "GFQ_conflictual",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_GFQ_impossible_seed0.json",
+      "scenario": "GFQ_impossible",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_GFQ_optimal_seed0.json",
+      "scenario": "GFQ_optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_GFQ_sub-optimal_seed0.json",
+      "scenario": "GFQ_sub-optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_GFQ_unequal_bargaining_seed0.json",
+      "scenario": "GFQ_unequal_bargaining",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RFQ_coalition_seed0.json",
+      "scenario": "RFQ_coalition",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RFQ_conflictual_seed0.json",
+      "scenario": "RFQ_conflictual",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RFQ_impossible_seed0.json",
+      "scenario": "RFQ_impossible",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RFQ_optimal_seed0.json",
+      "scenario": "RFQ_optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RFQ_sub-optimal_seed0.json",
+      "scenario": "RFQ_sub-optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RFQ_unequal_bargaining_seed0.json",
+      "scenario": "RFQ_unequal_bargaining",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RGF_coalition_seed0.json",
+      "scenario": "RGF_coalition",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RGF_conflictual_seed0.json",
+      "scenario": "RGF_conflictual",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RGF_impossible_seed0.json",
+      "scenario": "RGF_impossible",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RGF_optimal_seed0.json",
+      "scenario": "RGF_optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RGF_sub-optimal_seed0.json",
+      "scenario": "RGF_sub-optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RGF_unequal_bargaining_seed0.json",
+      "scenario": "RGF_unequal_bargaining",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RGQ_coalition_seed0.json",
+      "scenario": "RGQ_coalition",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RGQ_conflictual_seed0.json",
+      "scenario": "RGQ_conflictual",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RGQ_impossible_seed0.json",
+      "scenario": "RGQ_impossible",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RGQ_optimal_seed0.json",
+      "scenario": "RGQ_optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RGQ_sub-optimal_seed0.json",
+      "scenario": "RGQ_sub-optimal",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    },
+    {
+      "file": "Llama-3.1-8B-Instruct_v2_RGQ_unequal_bargaining_seed0.json",
+      "scenario": "RGQ_unequal_bargaining",
+      "seed": 0,
+      "errors": [],
+      "observations": {
+        "calls": 12,
+        "reached_max_new_tokens": 0,
+        "ended_with_eos": 12,
+        "response_parse_errors": 0,
+        "empty_returned_text": 0
+      },
+      "flagged_calls": [],
+      "status": "checked"
+    }
+  ],
+  "scope": "Generation diagnostics only; run check_full_results.py for matrix coverage and result structure."
+}

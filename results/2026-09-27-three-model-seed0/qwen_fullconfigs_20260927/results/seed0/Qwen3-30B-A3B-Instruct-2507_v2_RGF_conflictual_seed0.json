@@ -1,0 +1,217 @@
+{
+  "run_config": {
+    "timestamp_utc": "2026-09-27T12:42:22.881095+00:00",
+    "run_label": "RGF_conflictual",
+    "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "profiles": [
+      "reputation",
+      "eco-growth",
+      "family"
+    ],
+    "project_ids": [
+      "P8",
+      "P26",
+      "P14",
+      "P17",
+      "P16"
+    ],
+    "intention": false,
+    "thinking": false,
+    "seed": 0,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_new_tokens": 512,
+    "discussion_prompt_file": "discussion_v3.txt",
+    "project_evaluations_skipped": true
+  },
+  "project_initial_evaluation": {
+    "A1": {},
+    "A2": {},
+    "A3": {}
+  },
+  "initial_votes": {
+    "A1": {
+      "stakeholder_group": "City branding stakeholders",
+      "vote": "{\"selected_projects\": [\"P8\", \"P26\"], \"justification\": \"P8 enhances the city's global reputation through a iconic cultural landmark, while P26 establishes the city as a premier destination for international family cultural events, significantly boosting visibility, prestige, and external recognition—key priorities for city branding stakeholders.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P8",
+          "P26"
+        ],
+        "justification": "P8 enhances the city's global reputation through a iconic cultural landmark, while P26 establishes the city as a premier destination for international family cultural events, significantly boosting visibility, prestige, and external recognition—key priorities for city branding stakeholders.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "Economic-growth stakeholders",
+      "vote": "{\"selected_projects\": [\"P14\", \"P26\"], \"justification\": \"P14, the Commercial Logistics & Freight Hub, directly supports economic growth by enhancing business infrastructure, attracting investment, and creating jobs in transportation and logistics. P26, the International Children’s Cultural Festival, promotes the city as a family-friendly cultural destination, boosting tourism and local business activity. Together, these projects stimulate long-term economic productivity and job creation while aligning with our priority of fostering business development and innovation.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P14",
+          "P26"
+        ],
+        "justification": "P14, the Commercial Logistics & Freight Hub, directly supports economic growth by enhancing business infrastructure, attracting investment, and creating jobs in transportation and logistics. P26, the International Children’s Cultural Festival, promotes the city as a family-friendly cultural destination, boosting tourism and local business activity. Together, these projects stimulate long-term economic productivity and job creation while aligning with our priority of fostering business development and innovation.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Families with young children stakeholders",
+      "vote": "{\"selected_projects\": [\"P26\", \"P17\"], \"justification\": \"As a representative of families with young children, I prioritize projects that directly enhance family well-being, safety, and access to enriching, age-appropriate activities. The International Children’s Cultural Festival (P26) promotes cultural exposure and family bonding while positioning the city as a family-friendly destination. The Family Recreation & Activity Centers (P17) provide consistent, accessible opportunities for parents and children to engage in safe, educational, and fun activities together, directly supporting child development and family stability. Both projects align with our core values of childcare, family services, and improving everyday life for families.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P26",
+          "P17"
+        ],
+        "justification": "As a representative of families with young children, I prioritize projects that directly enhance family well-being, safety, and access to enriching, age-appropriate activities. The International Children’s Cultural Festival (P26) promotes cultural exposure and family bonding while positioning the city as a family-friendly destination. The Family Recreation & Activity Centers (P17) provide consistent, accessible opportunities for parents and children to engage in safe, educational, and fun activities together, directly supporting child development and family stability. Both projects align with our core values of childcare, family services, and improving everyday life for families.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "pairwise_discussions": [
+    {
+      "pair": [
+        "A1",
+        "A2"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "City branding stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal’s strength lies in funding P26, the International Children’s Cultural Festival, which enhances the city’s visibility as a family-oriented cultural destination—aligning with branding goals. However, P14 (Commercial Logistics & Freight Hub) does not contribute directly to city branding, reputation, or external recognition.\n\n### 2. Response to the rationale  \nWhile P26 supports cultural visibility and international appeal, P14 serves economic infrastructure rather than city branding; its benefits are indirect and not aligned with our core priority of enhancing the city’s prestige and global image.\n\n### 3. Concessions  \nProjects I am willing to give up: P14  \nProjects I insist on keeping: P26  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P8 (Cultural Heritage Landmark)  \n\n### 5. Negotiation proposal  \nProposed final budget: P8, P26  \nJustification: P8 establishes a lasting symbol of the city’s identity and heritage, directly enhancing its reputation and global visibility. P26 reinforces the city’s image as a vibrant, family-friendly cultural hub, amplifying its international recognition. Together, they maximize branding impact within the budget."
+        },
+        {
+          "speaker": "A2",
+          "stakeholder_group": "Economic-growth stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal to fund P8 and P26 aligns with city branding but does not prioritize economic growth, job creation, or business development. Neither project directly supports commercial infrastructure, logistics, or long-term productivity gains.\n\n### 2. Response to the rationale  \nWhile enhancing global reputation and family tourism is valuable, these benefits do not translate directly into measurable job creation or business investment—key concerns for economic-growth stakeholders.\n\n### 3. Concessions  \nProjects I am willing to give up: P8  \nProjects I insist on keeping: P14  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P16, P17, P26  \n\n### 5. Negotiation proposal  \nProposed final budget: P14, P26  \nJustification: P14 drives job creation, business expansion, and freight efficiency, directly advancing economic growth. P26 supports family tourism and cultural engagement, offering ancillary economic benefits without compromising core productivity goals."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A1",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "City branding stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P26 and P17, both of which enhance the city’s visibility and reputation through international cultural engagement and family-oriented programming. However, P17 focuses primarily on local, recurring activities with limited external recognition, which is less aligned with branding priorities than P26.\n\n### 2. Response to the rationale  \nThe justification for P26 is strongly aligned with city branding goals, as an international festival can elevate the city’s global profile and attract external attention—directly supporting our core priorities. P17, while valuable for families, offers minimal leverage for city-wide or international reputation enhancement.\n\n### 3. Concessions  \nProjects I am willing to give up: P17  \nProjects I insist on keeping: P26  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P8 (Cultural Heritage Landmark)  \n\n### 5. Negotiation proposal  \nProposed final budget: P26, P8  \nJustification: P26 strengthens the city’s international cultural identity and visibility, while P8 establishes a permanent, iconic landmark that enhances long-term prestige and global recognition—both projects directly advance city branding objectives."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Families with young children stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P8 and P26, which include a cultural landmark and a children’s festival—both of which indirectly support family engagement and community identity. However, P8 (a cultural landmark) does not directly address core family needs like childcare, safety, or housing stability, and P26, while family-oriented, is a recurring event rather than a permanent infrastructure investment in family well-being.\n\n### 2. Response to the rationale  \nWhile enhancing city branding is valuable, the justification focuses on external prestige and visibility, which do not align with our group’s priority of improving tangible, everyday life outcomes for families with young children.\n\n### 3. Concessions  \nProjects I am willing to give up: P8  \nProjects I insist on keeping: P26, P17  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P17, P14 (only if paired with P17), P16 (only if paired with P17)  \n\n### 5. Negotiation proposal  \nProposed final budget: P17, P26  \nJustification: P17 provides permanent, accessible family recreation and activities, directly supporting child development and parent-child bonding; P26 delivers a recurring, inclusive cultural event that enriches family life and strengthens community connection—both projects directly serve the daily needs and well-being of families with young children."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A2",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A2",
+          "stakeholder_group": "Economic-growth stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal to fund P26 and P17 offers strong benefits for family engagement and cultural outreach, but neither project directly supports economic growth, job creation, or business development—key priorities for my stakeholder group.  \n\n### 2. Response to the rationale  \nWhile the family-centered benefits of P26 and P17 are valid and valuable, they do not align with the economic growth mandate of my group, which prioritizes infrastructure and projects with measurable long-term productivity and investment returns.  \n\n### 3. Concessions  \nProjects I am willing to give up: P26, P17  \nProjects I insist on keeping: P14  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P14, P8 (if paired with P14)  \n\n### 5. Negotiation proposal  \nProposed final budget: P14, P8  \nJustification: P14 (Commercial Logistics & Freight Hub) directly drives job creation, business expansion, and regional economic competitiveness. P8 (Cultural Heritage Landmark) enhances the city’s global image and can attract tourism and investment, supporting long-term economic growth. Together, they deliver strong economic returns while maintaining cultural identity."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Families with young children stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal includes P26, the International Children’s Cultural Festival, which aligns with family-oriented cultural engagement and supports children’s well-being—directly benefiting families with young children. However, P14 (Commercial Logistics & Freight Hub) does not address childcare, safety, housing stability, or family services, and its benefits are indirect and primarily economic.\n\n### 2. Response to the rationale  \nWhile economic growth and tourism are valuable, the justification for P14 overlooks its limited direct impact on family well-being, which is central to our stakeholder group’s priorities. The argument for P26 is valid and partially aligned with our interests, but it should not be paired with a project that does not serve families.\n\n### 3. Concessions  \nProjects I am willing to give up: P14  \nProjects I insist on keeping: P26, P17  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P17, P16, P8  \n\n### 5. Negotiation proposal  \nProposed final budget: P26, P17  \nJustification: P26 supports children’s cultural engagement and family participation, while P17 provides regular, accessible recreational activities for parents and children—directly enhancing family well-being and everyday life. Both projects align with our core priorities of childcare, safety, and family services."
+        }
+      ]
+    }
+  ],
+  "final_votes": {
+    "A1": {
+      "stakeholder_group": "City branding stakeholders",
+      "vote": "{\"selected_projects\": [\"P26\", \"P17\"], \"justification\": \"While P8 strengthens city branding, the economic-growth and families-with-young-children stakeholders have compelling concerns about its direct impact on job creation and daily family well-being. P26 remains a strong anchor for city branding, as it enhances international visibility and prestige through a recurring global cultural event. Pairing it with P17—permanent, accessible family recreation centers—addresses the core priorities of both city branding (via sustained cultural engagement) and family stakeholders (via tangible, everyday benefits). This compromise preserves the international reputation focus while ensuring broader coalition support, increasing the likelihood of a successful, shared budget allocation.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P26",
+          "P17"
+        ],
+        "justification": "While P8 strengthens city branding, the economic-growth and families-with-young-children stakeholders have compelling concerns about its direct impact on job creation and daily family well-being. P26 remains a strong anchor for city branding, as it enhances international visibility and prestige through a recurring global cultural event. Pairing it with P17—permanent, accessible family recreation centers—addresses the core priorities of both city branding (via sustained cultural engagement) and family stakeholders (via tangible, everyday benefits). This compromise preserves the international reputation focus while ensuring broader coalition support, increasing the likelihood of a successful, shared budget allocation.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "Economic-growth stakeholders",
+      "vote": "{\"selected_projects\": [\"P26\", \"P8\"], \"justification\": \"While P14 supports long-term economic infrastructure, the strong opposition from families and branding stakeholders—highlighting its limited direct impact on their core priorities—underscores the need for compromise to secure consensus. P26 remains essential as it aligns with both economic growth (through tourism and local business) and family engagement. By replacing P14 with P8, the Cultural Heritage Landmark, we retain a high-impact project that enhances city branding and global visibility, which in turn supports economic competitiveness by attracting investment and visitors. This revised pair maintains a strong focus on economic growth through enhanced reputation and tourism, while fulfilling the shared goal of a feasible, supported allocation that avoids project failure.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P26",
+          "P8"
+        ],
+        "justification": "While P14 supports long-term economic infrastructure, the strong opposition from families and branding stakeholders—highlighting its limited direct impact on their core priorities—underscores the need for compromise to secure consensus. P26 remains essential as it aligns with both economic growth (through tourism and local business) and family engagement. By replacing P14 with P8, the Cultural Heritage Landmark, we retain a high-impact project that enhances city branding and global visibility, which in turn supports economic competitiveness by attracting investment and visitors. This revised pair maintains a strong focus on economic growth through enhanced reputation and tourism, while fulfilling the shared goal of a feasible, supported allocation that avoids project failure.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Families with young children stakeholders",
+      "vote": "{\"selected_projects\": [\"P26\", \"P8\"], \"justification\": \"While I prioritize family-centered projects that enhance childcare, safety, and everyday well-being, I recognize the importance of cross-stakeholder alignment to ensure the budget process succeeds and projects are funded. The City Branding representative’s argument for P8 as a permanent landmark that elevates the city’s global profile is compelling, especially when paired with P26, which directly supports families through cultural engagement and family bonding. P26 remains central to my group’s interests by offering children meaningful, inclusive, and enriching experiences. P8, as a cultural landmark, can also serve as a safe, accessible public space that supports family gatherings and community events, indirectly contributing to family well-being and neighborhood cohesion. By accepting P8 as a compromise, we preserve the core benefit of P26 while enabling broader consensus. This allocation respects both the branding and economic growth stakeholders’ priorities—ensuring the city gains international visibility and economic momentum—while still advancing family-centered values through a shared cultural asset.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P26",
+          "P8"
+        ],
+        "justification": "While I prioritize family-centered projects that enhance childcare, safety, and everyday well-being, I recognize the importance of cross-stakeholder alignment to ensure the budget process succeeds and projects are funded. The City Branding representative’s argument for P8 as a permanent landmark that elevates the city’s global profile is compelling, especially when paired with P26, which directly supports families through cultural engagement and family bonding. P26 remains central to my group’s interests by offering children meaningful, inclusive, and enriching experiences. P8, as a cultural landmark, can also serve as a safe, accessible public space that supports family gatherings and community events, indirectly contributing to family well-being and neighborhood cohesion. By accepting P8 as a compromise, we preserve the core benefit of P26 while enabling broader consensus. This allocation respects both the branding and economic growth stakeholders’ priorities—ensuring the city gains international visibility and economic momentum—while still advancing family-centered values through a shared cultural asset.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "orchestrator": {
+    "method": "deterministic_majority_aggregation",
+    "decision": {
+      "match": "partial_agreement",
+      "final_vote": [
+        "P26",
+        "P8"
+      ],
+      "project_vote_counts": {
+        "P17": 1,
+        "P26": 3,
+        "P8": 2
+      }
+    }
+  },
+  "metrics": {
+    "selected_projects": [
+      "P26",
+      "P8"
+    ],
+    "total_cost": 100.0,
+    "budget": 100,
+    "feasible": true,
+    "budget_violation": 0.0,
+    "agent_utilities": {
+      "A1:Reputation": 10.0,
+      "A2:Growth": 3.0,
+      "A3:Family": 7.0
+    },
+    "welfare": 6.666666666666667,
+    "min_utility": 3.0,
+    "optimal_welfare": 6.666666666666667,
+    "normalized_welfare": 1.0,
+    "regret": 0.0
+  }
+}

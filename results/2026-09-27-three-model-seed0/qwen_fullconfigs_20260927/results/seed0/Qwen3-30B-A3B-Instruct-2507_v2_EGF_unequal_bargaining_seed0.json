@@ -1,0 +1,217 @@
+{
+  "run_config": {
+    "timestamp_utc": "2026-09-27T12:20:41.309323+00:00",
+    "run_label": "EGF_unequal_bargaining",
+    "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "profiles": [
+      "ecology",
+      "eco-growth",
+      "family"
+    ],
+    "project_ids": [
+      "P16",
+      "P21",
+      "P22",
+      "P13",
+      "P11"
+    ],
+    "intention": false,
+    "thinking": false,
+    "seed": 0,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_new_tokens": 512,
+    "discussion_prompt_file": "discussion_v3.txt",
+    "project_evaluations_skipped": true
+  },
+  "project_initial_evaluation": {
+    "A1": {},
+    "A2": {},
+    "A3": {}
+  },
+  "initial_votes": {
+    "A1": {
+      "stakeholder_group": "Eco-oriented stakeholders",
+      "vote": "{\"selected_projects\": [\"P21\", \"P16\"], \"justification\": \"P21 addresses industrial emissions through renewable energy upgrades, delivering significant long-term environmental benefits, while P16 enhances ecological resilience by restoring native habitats and wildlife corridors. Together, they directly advance emissions reduction and biodiversity, aligning with our group's core priorities for sustainability and environmental protection.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P21",
+          "P16"
+        ],
+        "justification": "P21 addresses industrial emissions through renewable energy upgrades, delivering significant long-term environmental benefits, while P16 enhances ecological resilience by restoring native habitats and wildlife corridors. Together, they directly advance emissions reduction and biodiversity, aligning with our group's core priorities for sustainability and environmental protection.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "Economic-growth stakeholders",
+      "vote": "{\"selected_projects\": [\"P21\", \"P13\"], \"justification\": \"P21 drives industrial modernization, reduces emissions, and boosts productivity—key for long-term economic competitiveness. P13 fosters green entrepreneurship and local job creation, aligning with our focus on innovation and business development. Together, they maximize economic growth while advancing sustainability.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P21",
+          "P13"
+        ],
+        "justification": "P21 drives industrial modernization, reduces emissions, and boosts productivity—key for long-term economic competitiveness. P13 fosters green entrepreneurship and local job creation, aligning with our focus on innovation and business development. Together, they maximize economic growth while advancing sustainability.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Families with young children stakeholders",
+      "vote": "{\"selected_projects\": [\"P22\", \"P11\"], \"justification\": \"As a representative of families with young children, I prioritize projects that directly improve safety, well-being, and daily life for children and families. P22, Green Schoolyard Transformation, creates healthier, natural play spaces for children, supports outdoor learning, and enhances environmental quality near schools. P11, Urban Parks & Safe School Routes, ensures access to safe green spaces and secure pathways to school, which is critical for family safety and children's health. These projects align with our core values of childcare, safety, and family-centered urban development.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P22",
+          "P11"
+        ],
+        "justification": "As a representative of families with young children, I prioritize projects that directly improve safety, well-being, and daily life for children and families. P22, Green Schoolyard Transformation, creates healthier, natural play spaces for children, supports outdoor learning, and enhances environmental quality near schools. P11, Urban Parks & Safe School Routes, ensures access to safe green spaces and secure pathways to school, which is critical for family safety and children's health. These projects align with our core values of childcare, safety, and family-centered urban development.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "pairwise_discussions": [
+    {
+      "pair": [
+        "A1",
+        "A2"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "Eco-oriented stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P21 and P13, both of which deliver significant emissions reductions and support green innovation—aligning with environmental sustainability goals. However, it omits projects with direct, localized ecological benefits like habitat restoration and urban greening, which are critical for biodiversity and climate resilience.\n\n### 2. Response to the rationale  \nWhile economic growth and green entrepreneurship are important, the justification underestimates the immediate and long-term environmental value of restoring ecosystems and expanding urban green infrastructure, which directly enhance ecological resilience and community well-being.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P16, P11, P22  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P21, P13  \n\n### 5. Negotiation proposal  \nProposed final budget: P16, P11  \nJustification: P16 restores native ecosystems and wildlife corridors, directly enhancing biodiversity and climate resilience. P11 expands urban green spaces and safe active transportation routes, improving both environmental quality and public health—core priorities for eco-oriented residents."
+        },
+        {
+          "speaker": "A2",
+          "stakeholder_group": "Economic-growth stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal to fund P21 and P16 aligns partially with economic growth priorities: P21 supports industrial productivity and business competitiveness through energy upgrades, which can create jobs and attract investment. However, P16 primarily serves ecological goals with limited direct economic returns or job creation, making it a weaker fit for growth-oriented objectives.\n\n### 2. Response to the rationale  \nWhile P21’s environmental and productivity benefits are valid, the justification for P16 overlooks its minimal direct impact on job creation, business development, or economic competitiveness—key concerns for economic-growth stakeholders.\n\n### 3. Concessions  \nProjects I am willing to give up: P16  \nProjects I insist on keeping: P21  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P13, P11  \n\n### 5. Negotiation proposal  \nProposed final budget: P21, P13  \nJustification: P21 drives industrial efficiency and innovation, while P13 fosters green entrepreneurship and local employment—both directly advancing job creation, business development, and long-term economic productivity."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A1",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "Eco-oriented stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P22 and P11, both of which advance environmental sustainability through increased urban green space, biodiversity, and reduced emissions from active transportation. However, it does not include P21 or P16, which directly target industrial decarbonization and large-scale ecosystem restoration—key components of long-term ecological resilience.\n\n### 2. Response to the rationale  \nI acknowledge the strong emphasis on children’s safety and health through green schoolyards and safe routes, which are valuable co-benefits of environmental projects. However, from an eco-oriented perspective, we must also prioritize systemic emissions reductions and habitat restoration that benefit the entire urban ecosystem.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P21, P16  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P22, P11  \n\n### 5. Negotiation proposal  \nProposed final budget: P16, P21  \nJustification: P16 restores native habitats and enhances ecological resilience, while P21 drives deep decarbonization in industry—both are essential for long-term environmental sustainability and align with core eco-oriented priorities."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Families with young children stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal to fund P21 and P16 supports long-term environmental sustainability, which indirectly benefits families through improved air quality and ecological resilience. However, it does not directly address childcare access, housing stability, or immediate family well-being—key priorities for families with young children.\n\n### 2. Response to the rationale  \nWhile reducing industrial emissions and restoring biodiversity are important, these projects do not directly enhance the daily lives of families with young children, such as through safer school routes, accessible childcare, or stable housing.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: none (open to compromise if alternatives meet family priorities)\n\n### 4. Acceptable alternatives  \nProjects I would accept: P11, P22\n\n### 5. Negotiation proposal  \nProposed final budget: P11, P22  \nJustification: P11 creates safe walking and cycling routes to schools and expands neighborhood parks, directly improving safety and access to green space for families. P22 transforms schoolyards into natural play areas, offering healthier outdoor environments for children and supporting family well-being."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A2",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A2",
+          "stakeholder_group": "Economic-growth stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal to fund P22 and P11 aligns with environmental and community well-being, but neither project directly advances economic growth, job creation, or business development—key priorities for economic-growth stakeholders. P22 offers indirect benefits through green space development, but no clear mechanism for job generation or industrial productivity.\n\n### 2. Response to the rationale  \nWhile the safety and health benefits of P22 and P11 are valid and important, they do not significantly contribute to long-term economic competitiveness or innovation-driven growth, which are central to our stakeholder group’s mandate.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: none  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P21, P13  \n\n### 5. Negotiation proposal  \nProposed final budget: P21, P13  \nJustification: P21, Renewable Energy Industrial Upgrade, directly reduces industrial emissions while boosting productivity and attracting green investment. P13, Circular Economy Business Hub, fosters local green entrepreneurship, creates high-quality jobs, and strengthens the city’s innovation economy—both projects advance core economic-growth priorities."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Families with young children stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P21 and P13, which do not directly address childcare, family safety, housing stability, or everyday family well-being—core concerns for families with young children. While both projects have indirect environmental benefits, they lack clear, direct impacts on family life or child development.\n\n### 2. Response to the rationale  \nWhile industrial modernization and green entrepreneurship are important, they do not meet the immediate needs of families with young children for safe, accessible, and nurturing environments. The economic benefits of P21 and P13 are not aligned with the prioritized well-being of children and families.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: none (but I will not oppose a project if it supports family priorities)\n\n### 4. Acceptable alternatives  \nProjects I would accept: P11, P22\n\n### 5. Negotiation proposal  \nProposed final budget: P11, P22  \nJustification: P11 creates safe school routes and neighborhood parks, directly improving children’s safety and access to green space. P22 transforms schoolyards into natural play areas, enhancing child well-being and family engagement in education—both align with the core priorities of families with young children."
+        }
+      ]
+    }
+  ],
+  "final_votes": {
+    "A1": {
+      "stakeholder_group": "Eco-oriented stakeholders",
+      "vote": "{\"selected_projects\": [\"P21\", \"P11\"], \"justification\": \"P21 directly advances environmental sustainability by reducing industrial emissions through renewable energy upgrades, aligning with our group's core priorities. P11 supports green infrastructure, urban biodiversity, and safe mobility for children and families, delivering both environmental and community benefits. While P16 is valuable for biodiversity, P11 offers broader co-benefits—improving air quality, promoting active transportation, and enhancing public access to green space—making it a stronger compromise that addresses ecological resilience while responding to family stakeholders' concerns. This combination maintains strong environmental focus while increasing cross-stakeholder support, ensuring a feasible and collectively acceptable outcome.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P21",
+          "P11"
+        ],
+        "justification": "P21 directly advances environmental sustainability by reducing industrial emissions through renewable energy upgrades, aligning with our group's core priorities. P11 supports green infrastructure, urban biodiversity, and safe mobility for children and families, delivering both environmental and community benefits. While P16 is valuable for biodiversity, P11 offers broader co-benefits—improving air quality, promoting active transportation, and enhancing public access to green space—making it a stronger compromise that addresses ecological resilience while responding to family stakeholders' concerns. This combination maintains strong environmental focus while increasing cross-stakeholder support, ensuring a feasible and collectively acceptable outcome.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "Economic-growth stakeholders",
+      "vote": "{\"selected_projects\": [\"P21\", \"P11\"], \"justification\": \"P21 advances industrial modernization, boosts productivity, and attracts investment—core to economic growth and job creation. P11 delivers critical urban green infrastructure and safe school routes, addressing ecological resilience and family well-being without compromising economic priorities. This combination retains our focus on long-term economic competitiveness while accommodating the ecological and family-oriented concerns raised by other stakeholders, increasing the likelihood of consensus. It represents a balanced, feasible compromise that supports shared city-wide benefits.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P21",
+          "P11"
+        ],
+        "justification": "P21 advances industrial modernization, boosts productivity, and attracts investment—core to economic growth and job creation. P11 delivers critical urban green infrastructure and safe school routes, addressing ecological resilience and family well-being without compromising economic priorities. This combination retains our focus on long-term economic competitiveness while accommodating the ecological and family-oriented concerns raised by other stakeholders, increasing the likelihood of consensus. It represents a balanced, feasible compromise that supports shared city-wide benefits.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Families with young children stakeholders",
+      "vote": "{\"selected_projects\": [\"P22\", \"P11\"], \"justification\": \"I maintain my initial proposal because P22 and P11 directly address the core priorities of families with young children: safety, health, access to green spaces, and secure environments for children’s daily routines. While I acknowledge the importance of industrial decarbonization (P21) and large-scale ecosystem restoration (P16) for long-term environmental resilience, these projects do not deliver the same immediate, tangible benefits to children and families. P22 transforms schoolyards into safe, natural play and learning environments, while P11 ensures children can walk or bike to school safely and access neighborhood parks—critical for family well-being and child development. I remain open to future collaboration on broader sustainability goals, but for this round, I prioritize projects that directly improve everyday life for families with young children. This allocation remains feasible, fully within budget, and reflects the most urgent needs of my stakeholder group.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P22",
+          "P11"
+        ],
+        "justification": "I maintain my initial proposal because P22 and P11 directly address the core priorities of families with young children: safety, health, access to green spaces, and secure environments for children’s daily routines. While I acknowledge the importance of industrial decarbonization (P21) and large-scale ecosystem restoration (P16) for long-term environmental resilience, these projects do not deliver the same immediate, tangible benefits to children and families. P22 transforms schoolyards into safe, natural play and learning environments, while P11 ensures children can walk or bike to school safely and access neighborhood parks—critical for family well-being and child development. I remain open to future collaboration on broader sustainability goals, but for this round, I prioritize projects that directly improve everyday life for families with young children. This allocation remains feasible, fully within budget, and reflects the most urgent needs of my stakeholder group.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "orchestrator": {
+    "method": "deterministic_majority_aggregation",
+    "decision": {
+      "match": "partial_agreement",
+      "final_vote": [
+        "P11",
+        "P21"
+      ],
+      "project_vote_counts": {
+        "P11": 3,
+        "P21": 2,
+        "P22": 1
+      }
+    }
+  },
+  "metrics": {
+    "selected_projects": [
+      "P11",
+      "P21"
+    ],
+    "total_cost": 100.0,
+    "budget": 100,
+    "feasible": true,
+    "budget_violation": 0.0,
+    "agent_utilities": {
+      "A1:Eco": 10.0,
+      "A2:Growth": 6.0,
+      "A3:Family": 6.0
+    },
+    "welfare": 7.333333333333333,
+    "min_utility": 6.0,
+    "optimal_welfare": 7.333333333333333,
+    "normalized_welfare": 1.0,
+    "regret": 0.0
+  }
+}
