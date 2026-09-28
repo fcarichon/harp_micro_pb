@@ -99,6 +99,5 @@ Llama logs for indices 5 and 59 contain post-save Slurm task-epilog ambiguous-re
 - [Gemma per-configuration report](gemma4/SUMMARY.md)
 - [Llama per-configuration report](llama8b/SUMMARY.md)
 - [Backend and decoding caveats](BACKEND_COMPARABILITY.md)
-- [中文解读](READOUT_ZH.md)
 
 The batch is shared for asynchronous review. Useful questions are whether the intended benchmark target is consensus or feasible aggregation; what explains the cases that lose feasibility or welfare after discussion; and whether subsequent experiments should prioritize repeated seeds, a no-discussion control or more tightly matched generation settings. These are proposals for discussion, not experiments already authorized or launched. See the bundle README for this publication's scope; no Slack message is included in the upload.

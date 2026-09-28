@@ -2,7 +2,7 @@
 
 Experiments completed on 27 September 2026; results prepared for sharing on 28 September 2026. This is a results archive based on upstream commit `46c57cfbbc1a4e8a2a1adaca93c48667bda4ab92`. It does not change the repository's active runner, prompts or data.
 
-Start with the **[three-model comparison](crossmodels_20260927/report/THREE_MODEL_COMPARISON.md)**. The [Chinese readout](crossmodels_20260927/report/READOUT_ZH.md) and [backend comparability notes](crossmodels_20260927/report/BACKEND_COMPARABILITY.md) provide further context.
+Start with the **[three-model comparison](crossmodels_20260927/report/THREE_MODEL_COMPARISON.md)**. The [backend comparability notes](crossmodels_20260927/report/BACKEND_COMPARABILITY.md) provide further context. All published documentation is in English.
 
 ## Results at a glance
 
