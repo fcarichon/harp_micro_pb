@@ -1,0 +1,216 @@
+{
+  "run_config": {
+    "timestamp_utc": "2026-09-27T12:58:48.714041+00:00",
+    "run_label": "RFQ_conflictual",
+    "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "profiles": [
+      "reputation",
+      "family",
+      "egalitarian"
+    ],
+    "project_ids": [
+      "P8",
+      "P28",
+      "P17",
+      "P18",
+      "P16"
+    ],
+    "intention": false,
+    "thinking": false,
+    "seed": 0,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_new_tokens": 512,
+    "discussion_prompt_file": "discussion_v3.txt",
+    "project_evaluations_skipped": true
+  },
+  "project_initial_evaluation": {
+    "A1": {},
+    "A2": {},
+    "A3": {}
+  },
+  "initial_votes": {
+    "A1": {
+      "stakeholder_group": "City branding stakeholders",
+      "vote": "{\"selected_projects\": [\"P28\", \"P8\"], \"justification\": \"P28 enhances the city's global reputation as a leader in equality and inclusion, boosting international recognition. P8 strengthens the city's cultural identity and visibility, creating a landmark that elevates prestige and attracts global attention. Together, these projects maximize the city's external reputation, innovation leadership, and attractiveness, aligning with the priorities of city branding stakeholders.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P28",
+          "P8"
+        ],
+        "justification": "P28 enhances the city's global reputation as a leader in equality and inclusion, boosting international recognition. P8 strengthens the city's cultural identity and visibility, creating a landmark that elevates prestige and attracts global attention. Together, these projects maximize the city's external reputation, innovation leadership, and attractiveness, aligning with the priorities of city branding stakeholders.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "Families with young children stakeholders",
+      "vote": "{\"selected_projects\": [\"P17\", \"P18\"], \"justification\": \"P17 supports family well-being by providing accessible, affordable recreational opportunities for parents and children, directly improving daily life for families with young children. P18 addresses long-standing inequities in neighborhood infrastructure, ensuring that families in under-resourced areas have safer, better-maintained streets, parks, and community facilities—key to housing stability and child development. Together, these projects align with our priority for family-centered, equitable improvements that enhance everyday life.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P17",
+          "P18"
+        ],
+        "justification": "P17 supports family well-being by providing accessible, affordable recreational opportunities for parents and children, directly improving daily life for families with young children. P18 addresses long-standing inequities in neighborhood infrastructure, ensuring that families in under-resourced areas have safer, better-maintained streets, parks, and community facilities—key to housing stability and child development. Together, these projects align with our priority for family-centered, equitable improvements that enhance everyday life.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Social equity stakeholders",
+      "vote": "{\"selected_projects\": [\"P28\", \"P18\"], \"justification\": \"P28 advances social inclusion and equality, directly addressing systemic inequities through public policy and accessibility. P18 targets historically underserved neighborhoods by correcting long-standing infrastructure disparities, ensuring fair distribution of public resources. Together, these projects prioritize social equity by both promoting inclusive values and rectifying historical inequities in service provision.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P28",
+          "P18"
+        ],
+        "justification": "P28 advances social inclusion and equality, directly addressing systemic inequities through public policy and accessibility. P18 targets historically underserved neighborhoods by correcting long-standing infrastructure disparities, ensuring fair distribution of public resources. Together, these projects prioritize social equity by both promoting inclusive values and rectifying historical inequities in service provision.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "pairwise_discussions": [
+    {
+      "pair": [
+        "A1",
+        "A2"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "City branding stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P17 and P18, which offer limited direct benefits to city branding, visibility, or international reputation. While P18 improves equity, neither project is designed to enhance the city’s prestige, innovation leadership, or external recognition.  \n\n### 2. Response to the rationale  \nThe focus on family well-being and neighborhood equity is valid for that stakeholder group, but these goals do not align with the priorities of city branding stakeholders, who seek projects that elevate the city’s national and global image.  \n\n### 3. Concessions  \nProjects I am willing to give up: P17  \nProjects I insist on keeping: P28  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P8, P16  \n\n### 5. Negotiation proposal  \nProposed final budget: P8, P28  \nJustification: P8 establishes a symbolic cultural landmark that enhances the city’s identity and visibility, while P28 positions the city as a global leader in equality and inclusion—both projects significantly boost international reputation, prestige, and recognition, directly advancing city branding priorities."
+        },
+        {
+          "speaker": "A2",
+          "stakeholder_group": "Families with young children stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P28 and P8, which do not directly support childcare, family well-being, or housing stability—key concerns for families with young children. While cultural and equality centers have broad benefits, they do not address immediate family needs like accessible recreation or neighborhood safety.\n\n### 2. Response to the rationale  \nThe focus on city branding and global prestige is valid for some stakeholders, but families with young children need projects that improve daily life, such as safe, accessible spaces for children and parents to engage together.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P17  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P18 (if paired with P17), P16 (if paired with P17), but only if P17 is included  \n\n### 5. Negotiation proposal  \nProposed final budget: P17, P18  \nJustification: P17 directly supports family recreation and child development, while P18 addresses long-standing inequities in neighborhood infrastructure, improving safety and access to basic services—key for family well-being and housing stability."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A1",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "City branding stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P28, a globally visible center for equality and inclusion, which aligns with city branding goals by enhancing the city’s international reputation as a leader in progressive values. P18, while important for equity, has limited direct impact on external visibility or prestige.  \n\n### 2. Response to the rationale  \nThe justification for P18 is sound for equity stakeholders, but it does not advance the city’s global recognition or brand identity, which is central to my group’s priorities.  \n\n### 3. Concessions  \nProjects I am willing to give up: P18  \nProjects I insist on keeping: P28  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P8 (Cultural Heritage Landmark)  \n\n### 5. Negotiation proposal  \nProposed final budget: P8, P28  \nJustification: P8 establishes a permanent, iconic symbol of the city’s cultural identity and heritage, significantly boosting international visibility and prestige. P28 positions the city as a global leader in equality, enhancing its reputation and attracting global attention—both projects together maximize the city’s external recognition and brand value."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Social equity stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal to fund P28 and P8 prioritizes city branding and global visibility, which aligns partially with social equity through P28’s focus on inclusion. However, it lacks explicit focus on reducing inequality or supporting underserved communities, and P8 does not directly address access or equity gaps.\n\n### 2. Response to the rationale  \nWhile enhancing global reputation is valuable, the justification overlooks the fact that symbolic landmarks like P8 may benefit more affluent or central neighborhoods, potentially widening disparities if not paired with targeted equity measures.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P18, P28  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P17, P16  \n\n### 5. Negotiation proposal  \nProposed final budget: P18, P28  \nJustification: P18 directly addresses historical underinvestment in marginalized neighborhoods, reducing infrastructure inequality. P28 advances social inclusion and accessibility, aligning with core social equity priorities while ensuring broad public benefit."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A2",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A2",
+          "stakeholder_group": "Families with young children stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal’s emphasis on P28 and P18 aligns with broader equity goals and addresses systemic disparities, which is valuable. However, neither project directly targets the daily needs of families with young children, such as childcare access or safe, family-centered spaces.\n\n### 2. Response to the rationale  \nWhile advancing inclusion and infrastructure equity is important, the justification does not address how these projects improve everyday family well-being, safety, or access to essential services for parents and children.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P17  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P18, P28  \n\n### 5. Negotiation proposal  \nProposed final budget: P17, P18  \nJustification: P17 directly supports families with young children through shared recreational and developmental activities, while P18 advances equity by improving infrastructure in underserved neighborhoods, which can enhance housing stability and safety for families."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Social equity stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P17 and P18, both of which advance social equity by improving access to public services and addressing historical underinvestment in marginalized neighborhoods. The only potential limitation is that it does not include a project explicitly focused on systemic equality or inclusion at a structural level, such as P28.\n\n### 2. Response to the rationale  \nThe justification for P17 and P18 is strong and directly aligned with equity goals—especially in terms of access and infrastructure fairness. The focus on family well-being and neighborhood-level investment reflects a meaningful commitment to reducing disparities.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: none  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P28, P16  \n\n### 5. Negotiation proposal  \nProposed final budget: P18, P28  \nJustification: P18 directly addresses historical inequities in neighborhood infrastructure, advancing social equity by prioritizing underserved communities. P28 strengthens the city’s commitment to equality and inclusion, creating a visible, institutionalized center for social justice—complementing P18’s local focus with a citywide impact."
+        }
+      ]
+    }
+  ],
+  "final_votes": {
+    "A1": {
+      "stakeholder_group": "City branding stakeholders",
+      "vote": "{\"selected_projects\": [\"P28\", \"P18\"], \"justification\": \"While P8 strengthens city branding, concerns from equity stakeholders about its potential to exacerbate disparities are valid. P28 remains essential for advancing the city’s global reputation as a leader in inclusion, aligning with branding priorities. Pairing P28 with P18 ensures that the city’s enhanced visibility is grounded in tangible equity outcomes, addressing historical underinvestment in marginalized neighborhoods. This compromise preserves the core branding objective while meeting social equity demands, increasing the likelihood of consensus and preventing a failed budget process.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P28",
+          "P18"
+        ],
+        "justification": "While P8 strengthens city branding, concerns from equity stakeholders about its potential to exacerbate disparities are valid. P28 remains essential for advancing the city’s global reputation as a leader in inclusion, aligning with branding priorities. Pairing P28 with P18 ensures that the city’s enhanced visibility is grounded in tangible equity outcomes, addressing historical underinvestment in marginalized neighborhoods. This compromise preserves the core branding objective while meeting social equity demands, increasing the likelihood of consensus and preventing a failed budget process.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "Families with young children stakeholders",
+      "vote": "{\"selected_projects\": [\"P18\", \"P28\"], \"justification\": \"While P17 supports family well-being, the inclusion of P28—our shared priority with social equity stakeholders—strengthens the city’s commitment to systemic inclusion and creates a visible, institutional center for equality, which complements P18’s focus on infrastructure equity in under-resourced neighborhoods. This combination addresses both the immediate needs of families with young children (through improved safety, stability, and access in their communities) and the broader equity goals emphasized by other stakeholders. By accepting P28 and retaining P18, we maintain our core priorities while enabling a consensus that prevents project failure and ensures both family-centered and citywide benefits.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P18",
+          "P28"
+        ],
+        "justification": "While P17 supports family well-being, the inclusion of P28—our shared priority with social equity stakeholders—strengthens the city’s commitment to systemic inclusion and creates a visible, institutional center for equality, which complements P18’s focus on infrastructure equity in under-resourced neighborhoods. This combination addresses both the immediate needs of families with young children (through improved safety, stability, and access in their communities) and the broader equity goals emphasized by other stakeholders. By accepting P28 and retaining P18, we maintain our core priorities while enabling a consensus that prevents project failure and ensures both family-centered and citywide benefits.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Social equity stakeholders",
+      "vote": "{\"selected_projects\": [\"P28\", \"P18\"], \"justification\": \"P28 remains essential for advancing social inclusion and equality, directly addressing systemic inequities and aligning with core social equity values. P18 is critical for rectifying historical infrastructure disparities in underserved neighborhoods, ensuring that public resources are distributed fairly. While the city branding representative values external visibility, and families with young children stakeholders emphasize direct family benefits, both P28 and P18 together uphold the fundamental principles of social equity: reducing inequality and expanding access to public services in marginalized communities. These projects are the most effective means of achieving long-term fairness and justice in resource distribution, which is the central mandate of my stakeholder group. I maintain that this combination best serves the city’s most vulnerable populations, and I remain open to future discussions on how to complement these projects with others that address visibility and family needs.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P28",
+          "P18"
+        ],
+        "justification": "P28 remains essential for advancing social inclusion and equality, directly addressing systemic inequities and aligning with core social equity values. P18 is critical for rectifying historical infrastructure disparities in underserved neighborhoods, ensuring that public resources are distributed fairly. While the city branding representative values external visibility, and families with young children stakeholders emphasize direct family benefits, both P28 and P18 together uphold the fundamental principles of social equity: reducing inequality and expanding access to public services in marginalized communities. These projects are the most effective means of achieving long-term fairness and justice in resource distribution, which is the central mandate of my stakeholder group. I maintain that this combination best serves the city’s most vulnerable populations, and I remain open to future discussions on how to complement these projects with others that address visibility and family needs.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "orchestrator": {
+    "method": "deterministic_majority_aggregation",
+    "decision": {
+      "match": "agreement",
+      "final_vote": [
+        "P18",
+        "P28"
+      ],
+      "project_vote_counts": {
+        "P18": 3,
+        "P28": 3
+      }
+    }
+  },
+  "metrics": {
+    "selected_projects": [
+      "P18",
+      "P28"
+    ],
+    "total_cost": 100.0,
+    "budget": 100,
+    "feasible": true,
+    "budget_violation": 0.0,
+    "agent_utilities": {
+      "A1:Reputation": 6.0,
+      "A2:Family": 2.0,
+      "A3:Egalitarian": 10.0
+    },
+    "welfare": 6.0,
+    "min_utility": 2.0,
+    "optimal_welfare": 6.333333333333333,
+    "normalized_welfare": 0.9473684210526316,
+    "regret": 0.33333333333333304
+  }
+}

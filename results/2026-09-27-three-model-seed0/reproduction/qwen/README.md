@@ -68,11 +68,3 @@ The pilot is successful if it produces:
 3. A binary allocation vector.
 4. Basic metrics: feasibility, budget violation, welfare, minimum utility, normalized welfare, and regret.
 5. A manual process-label template for truthfulness, transparency, argumentative fairness, anti-collusion, procedural compliance, and rationale-outcome mismatch.
-
-## Experiment results
-
-The [27 September 2026 three-model results](results/2026-09-27-three-model-seed0/README.md)
-contain all 60 configurations at seed 0 for Qwen3-30B-A3B-Instruct-2507,
-Gemma-4-31B-it and Llama-3.1-8B-Instruct: raw outputs, per-run reports,
-comparability caveats, frozen reproduction inputs and a CPU-only verifier.
-This descriptive archive does not change the active implementation above.

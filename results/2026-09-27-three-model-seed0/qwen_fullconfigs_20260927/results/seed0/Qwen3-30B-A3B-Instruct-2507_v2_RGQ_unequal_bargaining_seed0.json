@@ -1,0 +1,217 @@
+{
+  "run_config": {
+    "timestamp_utc": "2026-09-27T12:53:22.074810+00:00",
+    "run_label": "RGQ_unequal_bargaining",
+    "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "profiles": [
+      "reputation",
+      "eco-growth",
+      "egalitarian"
+    ],
+    "project_ids": [
+      "P8",
+      "P25",
+      "P28",
+      "P2",
+      "P29"
+    ],
+    "intention": false,
+    "thinking": false,
+    "seed": 0,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_new_tokens": 512,
+    "discussion_prompt_file": "discussion_v3.txt",
+    "project_evaluations_skipped": true
+  },
+  "project_initial_evaluation": {
+    "A1": {},
+    "A2": {},
+    "A3": {}
+  },
+  "initial_votes": {
+    "A1": {
+      "stakeholder_group": "City branding stakeholders",
+      "vote": "{\"selected_projects\": [\"P25\", \"P28\"], \"justification\": \"P25 enhances the city's international profile by attracting global business and events, boosting visibility and prestige. P28 strengthens the city's reputation as a leader in equality and inclusion, reinforcing its image as a forward-thinking, globally respected urban center. Together, these projects amplify the city's global brand and reputation, aligning with the priorities of city branding stakeholders.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P25",
+          "P28"
+        ],
+        "justification": "P25 enhances the city's international profile by attracting global business and events, boosting visibility and prestige. P28 strengthens the city's reputation as a leader in equality and inclusion, reinforcing its image as a forward-thinking, globally respected urban center. Together, these projects amplify the city's global brand and reputation, aligning with the priorities of city branding stakeholders.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "Economic-growth stakeholders",
+      "vote": "{\"selected_projects\": [\"P25\", \"P2\"], \"justification\": \"The International Business & Convention Center and the AI Innovation District align with economic-growth priorities by attracting investment, fostering business development, creating high-quality jobs, and enhancing the city's global competitiveness. These projects stimulate innovation, support tech sector expansion, and generate long-term economic productivity, making them the most strategic choices for sustained economic growth.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P25",
+          "P2"
+        ],
+        "justification": "The International Business & Convention Center and the AI Innovation District align with economic-growth priorities by attracting investment, fostering business development, creating high-quality jobs, and enhancing the city's global competitiveness. These projects stimulate innovation, support tech sector expansion, and generate long-term economic productivity, making them the most strategic choices for sustained economic growth.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Social equity stakeholders",
+      "vote": "{\"selected_projects\": [\"P28\", \"P29\"], \"justification\": \"These projects align with social equity priorities by advancing equal treatment, accessibility, and inclusion. The Global Equality & Inclusion Center directly promotes social justice and equity, while the Inclusive Public Spaces Initiative ensures that all residents—regardless of age, ability, or background—can fully participate in civic life. Together, they expand access to public benefits and reduce systemic inequalities, fulfilling the core mission of equitable urban development.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P28",
+          "P29"
+        ],
+        "justification": "These projects align with social equity priorities by advancing equal treatment, accessibility, and inclusion. The Global Equality & Inclusion Center directly promotes social justice and equity, while the Inclusive Public Spaces Initiative ensures that all residents—regardless of age, ability, or background—can fully participate in civic life. Together, they expand access to public benefits and reduce systemic inequalities, fulfilling the core mission of equitable urban development.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "pairwise_discussions": [
+    {
+      "pair": [
+        "A1",
+        "A2"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "City branding stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P25 and P2, both of which significantly enhance the city’s international visibility and global competitiveness—key objectives for city branding. However, P2 (AI Innovation District) is less directly tied to reputation or symbolic prestige than P25 or P8.\n\n### 2. Response to the rationale  \nThe economic-growth argument for P25 and P2 is valid, but it overlooks the fact that P25 alone already delivers strong international recognition and branding value, while P2 contributes more to economic infrastructure than to city image.\n\n### 3. Concessions  \nProjects I am willing to give up: P2  \nProjects I insist on keeping: P25  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P8, P28, P29  \n\n### 5. Negotiation proposal  \nProposed final budget: P25, P8  \nJustification: The International Business & Convention Center (P25) establishes global visibility and prestige, while the Cultural Heritage Landmark (P8) creates a symbolic, enduring icon that enhances the city’s reputation and cultural identity—both directly advancing city branding goals."
+        },
+        {
+          "speaker": "A2",
+          "stakeholder_group": "Economic-growth stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal to fund P25 and P28 aligns with economic growth priorities by enhancing international business appeal and attracting investment through a global convention center. However, P28, while valuable for reputation, does not directly generate jobs or business activity at the scale of P2 or P25.  \n\n### 2. Response to the rationale  \nThe emphasis on city branding through international visibility and inclusion is valid, but from an economic-growth perspective, the primary value lies in projects that drive private investment, innovation, and employment—areas where P25 and P2 perform strongly, while P28 offers indirect benefits.  \n\n### 3. Concessions  \nProjects I am willing to give up: P28  \nProjects I insist on keeping: P25  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P2, P29  \n\n### 5. Negotiation proposal  \nProposed final budget: P25, P2  \nJustification: P25 drives international business and investment, while P2 creates a high-growth AI innovation hub that generates tech jobs, attracts startups, and enhances long-term economic productivity—both directly advancing economic-growth priorities."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A1",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "City branding stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P28 and P29, both of which enhance the city’s international reputation as a leader in equality and inclusive design—directly aligning with my stakeholder group’s emphasis on prestige, visibility, and global recognition. However, the proposal does not include any project with strong potential to elevate the city’s innovation leadership or attract international attention through economic or technological branding.\n\n### 2. Response to the rationale  \nThe focus on social equity is valid and commendable, and P28 in particular strengthens the city’s image as a global leader in inclusion—this is a key asset for city branding. P29 also contributes positively by showcasing progressive urban design on a national stage.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: none  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P25, P8, P2  \n\n### 5. Negotiation proposal  \nProposed final budget: P25, P29  \nJustification: The International Business & Convention Center (P25) significantly boosts the city’s global visibility and prestige by attracting international events and investment, while the Inclusive Public Spaces Initiative (P29) enhances the city’s reputation as a model for equitable urban design—both projects advance the city’s branding goals and align with the equity representative’s priorities."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Social equity stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal includes P28, which aligns with social equity priorities by advancing inclusion and equal treatment. However, P25 prioritizes international business and branding over equitable access to public services, potentially reinforcing existing inequalities by favoring economic development over underserved communities.\n\n### 2. Response to the rationale  \nWhile enhancing global reputation is valuable, the city’s branding should not come at the expense of equitable access to public benefits. P28 is a strong project for social equity, but pairing it with P25 risks prioritizing elite economic interests over broad public good.\n\n### 3. Concessions  \nProjects I am willing to give up: P25  \nProjects I insist on keeping: P28, P29  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P8, P2  \n\n### 5. Negotiation proposal  \nProposed final budget: P28, P29  \nJustification: P28 advances equality and inclusion, while P29 ensures equitable access to public spaces for all residents, especially marginalized groups. Together, they directly address social equity by expanding inclusive public infrastructure and services."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A2",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A2",
+          "stakeholder_group": "Economic-growth stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal to fund P28 and P29 advances social inclusion and accessibility, which are important for long-term civic cohesion. However, it does not directly prioritize economic growth, job creation, or business development—key concerns for my stakeholder group.\n\n### 2. Response to the rationale  \nWhile the social equity benefits of P28 and P29 are valid, they do not generate measurable economic returns or attract private investment, which are central to our group’s priorities.\n\n### 3. Concessions  \nProjects I am willing to give up: P28  \nProjects I insist on keeping: P2  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P25  \n\n### 5. Negotiation proposal  \nProposed final budget: P2, P25  \nJustification: The AI Innovation District (P2) drives job creation and technological competitiveness, while the International Business & Convention Center (P25) attracts global investment, hosts high-value events, and stimulates long-term economic growth—both directly advancing our group’s core priorities."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Social equity stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes economic growth through business and technology development, which aligns with long-term city competitiveness. However, it overlooks projects that directly advance social equity, inclusion, and accessibility for underserved communities.\n\n### 2. Response to the rationale  \nWhile attracting investment and fostering innovation are important, economic growth alone does not guarantee equitable outcomes. Without projects that reduce inequality and expand access to public benefits, the city risks deepening existing disparities.\n\n### 3. Concessions  \nProjects I am willing to give up: P2  \nProjects I insist on keeping: P28, P29  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P8, P25  \n\n### 5. Negotiation proposal  \nProposed final budget: P28, P29  \nJustification: The Global Equality & Inclusion Center and the Inclusive Public Spaces Initiative directly advance social equity by expanding access, promoting inclusion, and ensuring public benefits are fairly distributed across all communities. These projects align with the core priorities of equity, justice, and broad-based public benefit."
+        }
+      ]
+    }
+  ],
+  "final_votes": {
+    "A1": {
+      "stakeholder_group": "City branding stakeholders",
+      "vote": "{\"selected_projects\": [\"P25\", \"P29\"], \"justification\": \"P25 strengthens the city's international profile and global visibility, directly advancing city branding priorities through high-impact business and convention activity. P29 enhances inclusive public spaces, which supports the city's reputation as a forward-thinking, accessible, and equitable urban center—aligning with both branding and social equity goals. This combination maintains strong international prestige while addressing equitable access, making it a balanced and widely acceptable compromise that advances city branding without sacrificing inclusivity, and is more likely to gain cross-stakeholder support than the original proposal.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P25",
+          "P29"
+        ],
+        "justification": "P25 strengthens the city's international profile and global visibility, directly advancing city branding priorities through high-impact business and convention activity. P29 enhances inclusive public spaces, which supports the city's reputation as a forward-thinking, accessible, and equitable urban center—aligning with both branding and social equity goals. This combination maintains strong international prestige while addressing equitable access, making it a balanced and widely acceptable compromise that advances city branding without sacrificing inclusivity, and is more likely to gain cross-stakeholder support than the original proposal.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "Economic-growth stakeholders",
+      "vote": "{\"selected_projects\": [\"P25\", \"P28\"], \"justification\": \"The International Business & Convention Center (P25) remains central to economic growth by attracting investment, fostering business development, and enhancing global competitiveness. The Global Equality & Inclusion Center (P28) addresses critical social equity concerns while complementing P25’s economic impact by ensuring inclusive access to new economic opportunities. This combination strengthens both the city’s economic infrastructure and its reputation as a fair, forward-looking hub—achieving a balance that advances economic growth while responding to equity priorities. This compromise supports broad consensus and ensures the budget process succeeds.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P25",
+          "P28"
+        ],
+        "justification": "The International Business & Convention Center (P25) remains central to economic growth by attracting investment, fostering business development, and enhancing global competitiveness. The Global Equality & Inclusion Center (P28) addresses critical social equity concerns while complementing P25’s economic impact by ensuring inclusive access to new economic opportunities. This combination strengthens both the city’s economic infrastructure and its reputation as a fair, forward-looking hub—achieving a balance that advances economic growth while responding to equity priorities. This compromise supports broad consensus and ensures the budget process succeeds.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Social equity stakeholders",
+      "vote": "{\"selected_projects\": [\"P28\", \"P29\"], \"justification\": \"While I acknowledge the economic and branding benefits of projects like P25 and P2, my stakeholder group's core mandate is to advance social equity, reduce systemic inequalities, and ensure broad access to public goods. P28 and P29 directly fulfill this mission by institutionalizing equality and inclusion at the city’s core and redesigning public spaces to be universally accessible. These projects are not only aligned with our values but also contribute to long-term social cohesion and civic participation. Though I recognize the appeal of economic growth and international branding, I cannot compromise on the foundational principle of equitable development. However, I remain open to future discussions on how to integrate equity into other city initiatives, ensuring that all projects, including those focused on growth, are evaluated through an equity lens.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P28",
+          "P29"
+        ],
+        "justification": "While I acknowledge the economic and branding benefits of projects like P25 and P2, my stakeholder group's core mandate is to advance social equity, reduce systemic inequalities, and ensure broad access to public goods. P28 and P29 directly fulfill this mission by institutionalizing equality and inclusion at the city’s core and redesigning public spaces to be universally accessible. These projects are not only aligned with our values but also contribute to long-term social cohesion and civic participation. Though I recognize the appeal of economic growth and international branding, I cannot compromise on the foundational principle of equitable development. However, I remain open to future discussions on how to integrate equity into other city initiatives, ensuring that all projects, including those focused on growth, are evaluated through an equity lens.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "orchestrator": {
+    "method": "deterministic_majority_aggregation",
+    "decision": {
+      "match": "non_agreement",
+      "final_vote": [
+        "P25",
+        "P28"
+      ],
+      "project_vote_counts": {
+        "P25": 2,
+        "P28": 2,
+        "P29": 2
+      }
+    }
+  },
+  "metrics": {
+    "selected_projects": [
+      "P25",
+      "P28"
+    ],
+    "total_cost": 100.0,
+    "budget": 100,
+    "feasible": true,
+    "budget_violation": 0.0,
+    "agent_utilities": {
+      "A1:Reputation": 10.0,
+      "A2:Growth": 6.0,
+      "A3:Egalitarian": 6.0
+    },
+    "welfare": 7.333333333333333,
+    "min_utility": 6.0,
+    "optimal_welfare": 7.333333333333333,
+    "normalized_welfare": 1.0,
+    "regret": 0.0
+  }
+}

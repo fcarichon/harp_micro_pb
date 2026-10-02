@@ -1,0 +1,216 @@
+{
+  "run_config": {
+    "timestamp_utc": "2026-09-27T12:12:29.473121+00:00",
+    "run_label": "ERQ_unequal_bargaining",
+    "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "profiles": [
+      "ecology",
+      "reputation",
+      "egalitarian"
+    ],
+    "project_ids": [
+      "P16",
+      "P20",
+      "P23",
+      "P1",
+      "P24"
+    ],
+    "intention": false,
+    "thinking": false,
+    "seed": 0,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_new_tokens": 512,
+    "discussion_prompt_file": "discussion_v3.txt",
+    "project_evaluations_skipped": true
+  },
+  "project_initial_evaluation": {
+    "A1": {},
+    "A2": {},
+    "A3": {}
+  },
+  "initial_votes": {
+    "A1": {
+      "stakeholder_group": "Eco-oriented stakeholders",
+      "vote": "{\"selected_projects\": [\"P1\", \"P23\"], \"justification\": \"I prioritize projects that deliver immediate emissions reductions and address environmental justice. Green Public Transit Expansion (P1) directly reduces transportation-related emissions and congestion, while Pollution Reduction in Disadvantaged Neighborhoods (P23) targets the most polluted areas, improving public health and rectifying environmental inequities. Together, these projects advance both climate action and social equity, aligning with the core values of eco-oriented residents.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P1",
+          "P23"
+        ],
+        "justification": "I prioritize projects that deliver immediate emissions reductions and address environmental justice. Green Public Transit Expansion (P1) directly reduces transportation-related emissions and congestion, while Pollution Reduction in Disadvantaged Neighborhoods (P23) targets the most polluted areas, improving public health and rectifying environmental inequities. Together, these projects advance both climate action and social equity, aligning with the core values of eco-oriented residents.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "City branding stakeholders",
+      "vote": "{\"selected_projects\": [\"P20\", \"P24\"], \"justification\": \"P20 enhances the city's global reputation as a leader in sustainable innovation, boosting international visibility and prestige. P24 improves equitable access to green spaces, which supports the city's image as inclusive and livable, further strengthening its brand on national and global stages.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P20",
+          "P24"
+        ],
+        "justification": "P20 enhances the city's global reputation as a leader in sustainable innovation, boosting international visibility and prestige. P24 improves equitable access to green spaces, which supports the city's image as inclusive and livable, further strengthening its brand on national and global stages.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Social equity stakeholders",
+      "vote": "{\"selected_projects\": [\"P23\", \"P24\"], \"justification\": \"These projects directly address environmental and social inequities by targeting pollution reduction in disadvantaged neighborhoods and expanding green space access in underserved areas, thereby advancing social equity through fair distribution of environmental benefits and public resources.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P23",
+          "P24"
+        ],
+        "justification": "These projects directly address environmental and social inequities by targeting pollution reduction in disadvantaged neighborhoods and expanding green space access in underserved areas, thereby advancing social equity through fair distribution of environmental benefits and public resources.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "pairwise_discussions": [
+    {
+      "pair": [
+        "A1",
+        "A2"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "Eco-oriented stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P24, which aligns with ecological equity and green infrastructure goals, and P20, which has symbolic value but offers limited direct environmental benefits compared to projects focused on emissions reduction or ecosystem restoration.  \n\n### 2. Response to the rationale  \nWhile international branding and livability are valid city goals, the focus on P20 risks diverting funds from projects with measurable, direct environmental impact, such as biodiversity restoration or pollution reduction.  \n\n### 3. Concessions  \nProjects I am willing to give up: P20  \nProjects I insist on keeping: P16, P23, P1, P24  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P16, P23, P1  \n\n### 5. Negotiation proposal  \nProposed final budget: P1, P23  \nJustification: P1 delivers immediate emissions reductions through clean transit, while P23 directly addresses environmental injustice by cleaning up the most polluted neighborhoods—both align with core ecological and equity priorities."
+        },
+        {
+          "speaker": "A2",
+          "stakeholder_group": "City branding stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes immediate emissions reductions and environmental justice—valuable goals—but neither P1 nor P23 significantly enhances the city’s international reputation, visibility, or prestige, which are central to my stakeholder group’s priorities.  \n\n### 2. Response to the rationale  \nWhile P1 and P23 deliver strong local environmental and equity benefits, they do not prominently showcase the city as a global leader in innovation or sustainability on the world stage, which is critical for branding and long-term recognition.  \n\n### 3. Concessions  \nProjects I am willing to give up: P1, P23  \nProjects I insist on keeping: P20  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P16, P24  \n\n### 5. Negotiation proposal  \nProposed final budget: P20, P24  \nJustification: P20 establishes a globally visible carbon-neutral landmark that elevates the city’s international image as a sustainability innovator, while P24 enhances urban green space equity—aligning with both environmental and public perception goals, and offering a balanced contribution to both visibility and inclusion."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A1",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "Eco-oriented stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes environmental justice by targeting pollution in disadvantaged neighborhoods (P23) and expanding green space access (P24), which aligns with ecological resilience and long-term sustainability goals. However, it does not include projects that directly reduce citywide emissions through clean transportation or large-scale renewable infrastructure.\n\n### 2. Response to the rationale  \nThe focus on equity is valid and important, and I recognize that addressing disparities in environmental conditions is a key component of sustainable urban development. However, environmental sustainability also requires systemic emissions reductions and climate resilience at scale.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P1, P23, P24  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P16, P20  \n\n### 5. Negotiation proposal  \nProposed final budget: P1, P23  \n\nJustification: P1 delivers immediate and measurable emissions reductions through green public transit, directly advancing climate goals. P23 addresses environmental inequity by targeting pollution in disadvantaged neighborhoods, aligning with both ecological and social sustainability priorities. Together, they balance systemic emissions reduction with targeted equity improvements within budget constraints."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Social equity stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal strongly aligns with social equity by prioritizing pollution reduction in disadvantaged neighborhoods (P23), which directly addresses environmental injustice. However, it overlooks the need to expand access to green space in underserved areas (P24), a key dimension of equitable urban development.\n\n### 2. Response to the rationale  \nI agree that reducing emissions and targeting pollution in disadvantaged areas are critical. The inclusion of P23 is a strong step toward environmental justice, and I appreciate the emphasis on public health and equity.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P24  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P1, P23  \n\n### 5. Negotiation proposal  \nProposed final budget: P23, P24  \nJustification: These two projects together directly address environmental inequities—P23 by cleaning up the most polluted neighborhoods and P24 by ensuring equitable access to urban green space, fulfilling core social equity priorities."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A2",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A2",
+          "stakeholder_group": "City branding stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P23 and P24, which address environmental justice and equitable access—important goals—but neither project directly enhances the city’s international reputation, visibility, or prestige, which are central to my stakeholder group’s priorities.  \n\n### 2. Response to the rationale  \nWhile the social equity rationale is valid and important, it does not align with the branding focus on global recognition and innovation leadership, which are key to elevating the city’s image.  \n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P20  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P20, P16  \n\n### 5. Negotiation proposal  \nProposed final budget: P20, P16  \nJustification: P20 establishes the city as a global leader in sustainable design, directly enhancing its international reputation and visibility. P16 supports ecological resilience and complements P20 by showcasing the city’s commitment to biodiversity, reinforcing a narrative of innovation and environmental stewardship."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Social equity stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal includes P24, which directly advances social equity by addressing disparities in access to green spaces, a key priority for my group. However, P20 prioritizes city branding over direct equity impacts and does not target underserved communities or reduce environmental inequalities.\n\n### 2. Response to the rationale  \nWhile P24 aligns with our goals of equitable access, P20’s focus on international prestige does not directly serve the reduction of inequality or expanded access to public services, which are central to social equity.\n\n### 3. Concessions  \nProjects I am willing to give up: P20  \nProjects I insist on keeping: P24  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P23, P1  \n\n### 5. Negotiation proposal  \nProposed final budget: P23, P24  \nJustification: P23 targets pollution reduction in disadvantaged neighborhoods, directly addressing environmental injustice. P24 expands green space access in underserved areas, ensuring equitable distribution of public benefits and advancing social equity."
+        }
+      ]
+    }
+  ],
+  "final_votes": {
+    "A1": {
+      "stakeholder_group": "Eco-oriented stakeholders",
+      "vote": "{\"selected_projects\": [\"P23\", \"P24\"], \"justification\": \"I acknowledge the value of enhancing the city’s global visibility through a landmark like P20, but my stakeholder group’s core priorities remain environmental sustainability, emissions reduction, and environmental justice. While P1 offers strong emissions reductions, the social equity stakeholders rightly emphasize that equitable access to green space (P24) is essential for true environmental justice. P23 directly addresses pollution in disadvantaged neighborhoods, and P24 ensures that all residents—regardless of location—have access to urban greenery. Together, these projects deliver on both environmental remediation and equity, fulfilling key goals of eco-oriented residents while aligning with the social equity group’s insistence on P24. This compromise maintains a strong environmental and justice focus, and it supports a shared outcome that avoids project failure. I accept this shift as a necessary step toward consensus, as it preserves the most critical environmental and equity outcomes for our community.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P23",
+          "P24"
+        ],
+        "justification": "I acknowledge the value of enhancing the city’s global visibility through a landmark like P20, but my stakeholder group’s core priorities remain environmental sustainability, emissions reduction, and environmental justice. While P1 offers strong emissions reductions, the social equity stakeholders rightly emphasize that equitable access to green space (P24) is essential for true environmental justice. P23 directly addresses pollution in disadvantaged neighborhoods, and P24 ensures that all residents—regardless of location—have access to urban greenery. Together, these projects deliver on both environmental remediation and equity, fulfilling key goals of eco-oriented residents while aligning with the social equity group’s insistence on P24. This compromise maintains a strong environmental and justice focus, and it supports a shared outcome that avoids project failure. I accept this shift as a necessary step toward consensus, as it preserves the most critical environmental and equity outcomes for our community.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "City branding stakeholders",
+      "vote": "{\"selected_projects\": [\"P24\", \"P23\"], \"justification\": \"While P20 aligns with city branding goals, the strong consensus from both eco- and social equity stakeholders on prioritizing direct environmental and social impact—particularly in disadvantaged neighborhoods—highlights the urgency of addressing pollution and access inequities. P24 maintains our focus on equitable green space access, which enhances the city’s livability and global image, while P23 delivers measurable environmental justice outcomes. This combination preserves core elements of our stakeholder value—equity and reputation—while enabling broad agreement and ensuring the budget is fully funded and impactful.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P24",
+          "P23"
+        ],
+        "justification": "While P20 aligns with city branding goals, the strong consensus from both eco- and social equity stakeholders on prioritizing direct environmental and social impact—particularly in disadvantaged neighborhoods—highlights the urgency of addressing pollution and access inequities. P24 maintains our focus on equitable green space access, which enhances the city’s livability and global image, while P23 delivers measurable environmental justice outcomes. This combination preserves core elements of our stakeholder value—equity and reputation—while enabling broad agreement and ensuring the budget is fully funded and impactful.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Social equity stakeholders",
+      "vote": "{\"selected_projects\": [\"P23\", \"P24\"], \"justification\": \"While I acknowledge the value of systemic emissions reduction (P1) and international visibility (P20), my stakeholder group’s core priority remains advancing social equity through targeted investment in underserved communities. P23 directly reduces environmental harm in disadvantaged neighborhoods, addressing long-standing health and environmental injustices. P24 ensures equitable access to green space, a critical public good currently distributed unevenly across the city. Together, these projects deliver the most direct and measurable benefits to the most vulnerable populations, fulfilling the mandate of fair distribution of public resources. I remain committed to this allocation as it best advances the principles of equity, justice, and inclusive urban development, even as I recognize the broader importance of other goals. A shared budget must reflect the fundamental role of equity in sustainable cities.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P23",
+          "P24"
+        ],
+        "justification": "While I acknowledge the value of systemic emissions reduction (P1) and international visibility (P20), my stakeholder group’s core priority remains advancing social equity through targeted investment in underserved communities. P23 directly reduces environmental harm in disadvantaged neighborhoods, addressing long-standing health and environmental injustices. P24 ensures equitable access to green space, a critical public good currently distributed unevenly across the city. Together, these projects deliver the most direct and measurable benefits to the most vulnerable populations, fulfilling the mandate of fair distribution of public resources. I remain committed to this allocation as it best advances the principles of equity, justice, and inclusive urban development, even as I recognize the broader importance of other goals. A shared budget must reflect the fundamental role of equity in sustainable cities.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "orchestrator": {
+    "method": "deterministic_majority_aggregation",
+    "decision": {
+      "match": "agreement",
+      "final_vote": [
+        "P23",
+        "P24"
+      ],
+      "project_vote_counts": {
+        "P23": 3,
+        "P24": 3
+      }
+    }
+  },
+  "metrics": {
+    "selected_projects": [
+      "P23",
+      "P24"
+    ],
+    "total_cost": 100.0,
+    "budget": 100,
+    "feasible": true,
+    "budget_violation": 0.0,
+    "agent_utilities": {
+      "A1:Eco": 10.0,
+      "A2:Reputation": 2.0,
+      "A3:Egalitarian": 10.0
+    },
+    "welfare": 7.333333333333333,
+    "min_utility": 2.0,
+    "optimal_welfare": 7.333333333333333,
+    "normalized_welfare": 1.0,
+    "regret": 0.0
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "run_config": {
+    "timestamp_utc": "2026-09-27T13:09:53.331014+00:00",
+    "run_label": "GFQ_unequal_bargaining",
+    "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "profiles": [
+      "eco-growth",
+      "family",
+      "egalitarian"
+    ],
+    "project_ids": [
+      "P14",
+      "P30",
+      "P32",
+      "P31",
+      "P9"
+    ],
+    "intention": false,
+    "thinking": false,
+    "seed": 0,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_new_tokens": 512,
+    "discussion_prompt_file": "discussion_v3.txt",
+    "project_evaluations_skipped": true
+  },
+  "project_initial_evaluation": {
+    "A1": {},
+    "A2": {},
+    "A3": {}
+  },
+  "initial_votes": {
+    "A1": {
+      "stakeholder_group": "Economic-growth stakeholders",
+      "vote": "{\"selected_projects\": [\"P14\", \"P32\"], \"justification\": \"The Commercial Logistics & Freight Hub (P14) drives economic growth by enhancing supply chain efficiency, attracting businesses, and creating high-volume jobs. The Small Business Opportunity Fund (P32) directly supports entrepreneurship in underserved areas, fostering innovation and long-term economic productivity. Together, these projects maximize job creation, business development, and equitable economic expansion, aligning with the priorities of economic-growth stakeholders.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P14",
+          "P32"
+        ],
+        "justification": "The Commercial Logistics & Freight Hub (P14) drives economic growth by enhancing supply chain efficiency, attracting businesses, and creating high-volume jobs. The Small Business Opportunity Fund (P32) directly supports entrepreneurship in underserved areas, fostering innovation and long-term economic productivity. Together, these projects maximize job creation, business development, and equitable economic expansion, aligning with the priorities of economic-growth stakeholders.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "Families with young children stakeholders",
+      "vote": "{\"selected_projects\": [\"P31\", \"P30\"], \"justification\": \"As a representative of families with young children, I prioritize projects that directly support childcare access, family well-being, and economic stability for parents. P31, the Working Parents Business & Childcare Centers, combines on-site childcare with workspaces, enabling parents—especially those balancing work and caregiving—to remain economically active. P30, the Family Entertainment District, enhances safe, accessible leisure options for children and parents, promoting family life and neighborhood engagement. Together, these projects address both immediate family needs and long-term economic resilience, directly improving everyday life for families with young children.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P31",
+          "P30"
+        ],
+        "justification": "As a representative of families with young children, I prioritize projects that directly support childcare access, family well-being, and economic stability for parents. P31, the Working Parents Business & Childcare Centers, combines on-site childcare with workspaces, enabling parents—especially those balancing work and caregiving—to remain economically active. P30, the Family Entertainment District, enhances safe, accessible leisure options for children and parents, promoting family life and neighborhood engagement. Together, these projects address both immediate family needs and long-term economic resilience, directly improving everyday life for families with young children.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Social equity stakeholders",
+      "vote": "{\"selected_projects\": [\"P32\", \"P9\"], \"justification\": \"These projects best advance social equity by addressing systemic economic disparities. The Small Business Opportunity Fund directly supports underserved entrepreneurs, reducing barriers to entry and promoting inclusive economic growth. The Community Employment Guarantee provides immediate, dignified work opportunities for unemployed residents, particularly those in marginalized communities, helping to reduce poverty and inequality. Together, they prioritize fairness, access to opportunity, and broad distribution of benefits, aligning with core social equity values.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P32",
+          "P9"
+        ],
+        "justification": "These projects best advance social equity by addressing systemic economic disparities. The Small Business Opportunity Fund directly supports underserved entrepreneurs, reducing barriers to entry and promoting inclusive economic growth. The Community Employment Guarantee provides immediate, dignified work opportunities for unemployed residents, particularly those in marginalized communities, helping to reduce poverty and inequality. Together, they prioritize fairness, access to opportunity, and broad distribution of benefits, aligning with core social equity values.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "pairwise_discussions": [
+    {
+      "pair": [
+        "A1",
+        "A2"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "Economic-growth stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P31 and P30, both of which offer indirect economic benefits through increased labor participation and local business activity. However, neither project directly targets large-scale job creation, business investment attraction, or long-term infrastructure expansion—key priorities for economic-growth stakeholders.\n\n### 2. Response to the rationale  \nWhile P31 supports workforce participation and could foster entrepreneurship, its primary focus on childcare integration limits its scalability and broad economic impact compared to infrastructure-driven projects. P30 enhances leisure but does not significantly advance business development or productivity gains.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P14, P32  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P9, P31  \n\n### 5. Negotiation proposal  \nProposed final budget: P14, P32  \nJustification: P14, the Commercial Logistics & Freight Hub, drives job creation, attracts business investment, and expands economic infrastructure. P32, the Small Business Opportunity Fund, directly supports entrepreneurship in underserved areas, increasing long-term economic productivity and competitiveness. Together, they best advance economic growth, innovation, and inclusive business development."
+        },
+        {
+          "speaker": "A2",
+          "stakeholder_group": "Families with young children stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P14 and P32, which do not directly address childcare, safety, housing stability, or family well-being—core concerns for families with young children. While P32 supports underserved communities, it lacks direct family-focused benefits.  \n\n### 2. Response to the rationale  \nThe economic growth argument is valid, but it overlooks the immediate, tangible needs of families, such as accessible childcare and safe, stable neighborhoods. Long-term economic gains do not substitute for urgent family-supporting infrastructure.  \n\n### 3. Concessions  \nProjects I am willing to give up: P14  \nProjects I insist on keeping: P31  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P30, P9  \n\n### 5. Negotiation proposal  \nProposed final budget: P31, P30  \nJustification: P31 directly supports working parents by integrating childcare with workspaces, reducing caregiving burdens and enabling economic participation. P30 enhances family leisure and community engagement, offering safe, accessible recreational opportunities for children and parents alike."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A1",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "Economic-growth stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P32 and P9, which both support economic inclusion and job creation—key concerns for economic-growth stakeholders. However, P9 is a public works program with limited long-term productivity gains compared to infrastructure or business development projects that drive scalable economic growth.\n\n### 2. Response to the rationale  \nWhile the social equity argument for P32 is compelling and aligns with inclusive growth, P9’s focus on temporary employment does not generate the same level of sustained business development, innovation, or infrastructure expansion that supports long-term economic competitiveness.\n\n### 3. Concessions  \nProjects I am willing to give up: P9  \nProjects I insist on keeping: P32  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P14, P31  \n\n### 5. Negotiation proposal  \nProposed final budget: P32, P14  \nJustification: P32 expands access to entrepreneurship, directly supporting economic growth by fostering new businesses. P14 builds critical logistics infrastructure that enhances regional competitiveness, attracts private investment, and creates high-quality jobs—aligning with both economic growth and inclusive development goals."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Social equity stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal supports P32, which aligns with social equity by targeting underserved communities for entrepreneurship, and P14, which primarily benefits economic growth through infrastructure. However, P14 does not directly address inequality or expand public services for vulnerable populations, making it less aligned with social equity priorities.\n\n### 2. Response to the rationale  \nWhile the economic growth argument for P14 is valid, it does not sufficiently advance equity or access to public services, which are central to social equity. P32 is a strong component, but pairing it with P14 risks prioritizing market-driven outcomes over inclusive public benefits.\n\n### 3. Concessions  \nProjects I am willing to give up: P14  \nProjects I insist on keeping: P32, P9, P31  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P30 (if paired with P9 or P31), P9, P31  \n\n### 5. Negotiation proposal  \nProposed final budget: P32, P9  \nJustification: P32 expands access to entrepreneurship for historically underserved communities, and P9 provides guaranteed employment to unemployed residents, directly reducing inequality and ensuring broad access to economic opportunity—both core priorities for social equity."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A2",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A2",
+          "stakeholder_group": "Families with young children stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes social equity through support for underserved entrepreneurs (P32) and job access for the unemployed (P9), which aligns with broader community well-being. However, it does not directly address childcare access, family safety, or housing stability—key priorities for families with young children.\n\n### 2. Response to the rationale  \nWhile the focus on economic inclusion is valuable, the lack of direct benefits for families with young children—such as childcare infrastructure or family-centered services—means this proposal does not fully reflect our group’s core needs.\n\n### 3. Concessions  \nProjects I am willing to give up: P9  \nProjects I insist on keeping: P31  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P30, P32  \n\n### 5. Negotiation proposal  \nProposed final budget: P31, P30  \nJustification: P31 directly supports working parents by integrating childcare with workspaces, enhancing family economic participation and stability. P30 expands family-friendly leisure options, improving quality of life for parents and children while supporting local businesses. Together, they best serve the everyday needs of families with young children."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Social equity stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P31 and P30, both of which offer tangible benefits for family well-being and economic participation, particularly for parents. However, neither project directly targets systemic inequality or expands public services in historically underserved communities, which are central to social equity priorities.\n\n### 2. Response to the rationale  \nWhile P31 does support working parents—especially those from lower-income backgrounds—it is not explicitly designed to address disparities in access to childcare or economic opportunity across neighborhoods. The Family Entertainment District (P30) is more focused on leisure and commercial activity than on equity or public service expansion.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P9, P32  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P31, P9, P32  \n\n### 5. Negotiation proposal  \nProposed final budget: P9, P32  \nJustification: The Community Employment Guarantee (P9) provides direct, inclusive job access for unemployed residents, especially in marginalized communities, while the Small Business Opportunity Fund (P32) actively reduces economic disparities by supporting entrepreneurs in historically underinvested neighborhoods—both projects advance social equity through broad access and structural inclusion."
+        }
+      ]
+    }
+  ],
+  "final_votes": {
+    "A1": {
+      "stakeholder_group": "Economic-growth stakeholders",
+      "vote": "{\"selected_projects\": [\"P32\", \"P31\"], \"justification\": \"While P14 supports long-term economic infrastructure, the concerns raised by families and social equity stakeholders highlight the need for more immediate, inclusive, and family-centered investments. P32 directly advances economic growth by empowering underserved entrepreneurs, aligning with our core priorities. P31 complements this by enabling working parents to remain economically active through integrated work and childcare spaces, creating jobs and fostering inclusive economic participation. Together, P32 and P31 balance economic growth with equity and family well-being, addressing key concerns from other stakeholders while preserving our focus on job creation, innovation, and inclusive business development.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P32",
+          "P31"
+        ],
+        "justification": "While P14 supports long-term economic infrastructure, the concerns raised by families and social equity stakeholders highlight the need for more immediate, inclusive, and family-centered investments. P32 directly advances economic growth by empowering underserved entrepreneurs, aligning with our core priorities. P31 complements this by enabling working parents to remain economically active through integrated work and childcare spaces, creating jobs and fostering inclusive economic participation. Together, P32 and P31 balance economic growth with equity and family well-being, addressing key concerns from other stakeholders while preserving our focus on job creation, innovation, and inclusive business development.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "Families with young children stakeholders",
+      "vote": "{\"selected_projects\": [\"P31\", \"P9\"], \"justification\": \"I remain committed to prioritizing projects that directly support families with young children, particularly childcare access, economic stability, and safety. While P30 offers family-friendly leisure opportunities, it is less aligned with core needs like affordable childcare and workforce integration. P31, the Working Parents Business & Childcare Centers, directly addresses these priorities by enabling parents to work while ensuring reliable, on-site childcare—critical for family well-being and economic participation. I have revised my proposal to include P9, the Community Employment Guarantee, in response to concerns about equity and inclusive job access. P9 provides stable employment for unemployed residents, including many from low-income families, which strengthens household stability and supports child-rearing capacity. This combination of P31 and P9 balances my stakeholder’s needs with broader equity and employment goals, making it a feasible and fair compromise that advances both family well-being and inclusive economic opportunity.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P31",
+          "P9"
+        ],
+        "justification": "I remain committed to prioritizing projects that directly support families with young children, particularly childcare access, economic stability, and safety. While P30 offers family-friendly leisure opportunities, it is less aligned with core needs like affordable childcare and workforce integration. P31, the Working Parents Business & Childcare Centers, directly addresses these priorities by enabling parents to work while ensuring reliable, on-site childcare—critical for family well-being and economic participation. I have revised my proposal to include P9, the Community Employment Guarantee, in response to concerns about equity and inclusive job access. P9 provides stable employment for unemployed residents, including many from low-income families, which strengthens household stability and supports child-rearing capacity. This combination of P31 and P9 balances my stakeholder’s needs with broader equity and employment goals, making it a feasible and fair compromise that advances both family well-being and inclusive economic opportunity.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Social equity stakeholders",
+      "vote": "{\"selected_projects\": [\"P32\", \"P31\"], \"justification\": \"I maintain a strong commitment to social equity by prioritizing projects that reduce systemic disparities and expand access to opportunity. P32 directly supports underserved entrepreneurs, advancing economic inclusion and long-term community wealth. P31 complements this by addressing the intersecting challenges of childcare access and economic participation for working parents—particularly in marginalized communities. While P9 provides immediate employment, P31 offers a sustainable, integrated solution that aligns with both social equity and family well-being. This combination responds to concerns raised by families with young children while preserving core equity priorities. It also offers a bridge to economic-growth stakeholders by supporting entrepreneurship and workforce participation through infrastructure that enables business development. This compromise upholds our group’s values while increasing the likelihood of a shared, feasible outcome.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P32",
+          "P31"
+        ],
+        "justification": "I maintain a strong commitment to social equity by prioritizing projects that reduce systemic disparities and expand access to opportunity. P32 directly supports underserved entrepreneurs, advancing economic inclusion and long-term community wealth. P31 complements this by addressing the intersecting challenges of childcare access and economic participation for working parents—particularly in marginalized communities. While P9 provides immediate employment, P31 offers a sustainable, integrated solution that aligns with both social equity and family well-being. This combination responds to concerns raised by families with young children while preserving core equity priorities. It also offers a bridge to economic-growth stakeholders by supporting entrepreneurship and workforce participation through infrastructure that enables business development. This compromise upholds our group’s values while increasing the likelihood of a shared, feasible outcome.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "orchestrator": {
+    "method": "deterministic_majority_aggregation",
+    "decision": {
+      "match": "partial_agreement",
+      "final_vote": [
+        "P31",
+        "P32"
+      ],
+      "project_vote_counts": {
+        "P31": 3,
+        "P32": 2,
+        "P9": 1
+      }
+    }
+  },
+  "metrics": {
+    "selected_projects": [
+      "P31",
+      "P32"
+    ],
+    "total_cost": 100.0,
+    "budget": 100,
+    "feasible": true,
+    "budget_violation": 0.0,
+    "agent_utilities": {
+      "A1:Growth": 10.0,
+      "A2:Family": 6.0,
+      "A3:Egalitarian": 6.0
+    },
+    "welfare": 7.333333333333333,
+    "min_utility": 6.0,
+    "optimal_welfare": 7.333333333333333,
+    "normalized_welfare": 1.0,
+    "regret": 0.0
+  }
+}

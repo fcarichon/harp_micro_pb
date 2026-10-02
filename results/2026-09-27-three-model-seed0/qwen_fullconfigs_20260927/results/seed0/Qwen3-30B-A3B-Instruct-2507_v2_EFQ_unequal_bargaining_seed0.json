@@ -1,0 +1,217 @@
+{
+  "run_config": {
+    "timestamp_utc": "2026-09-27T12:37:02.262538+00:00",
+    "run_label": "EFQ_unequal_bargaining",
+    "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "profiles": [
+      "ecology",
+      "family",
+      "egalitarian"
+    ],
+    "project_ids": [
+      "P16",
+      "P22",
+      "P23",
+      "P11",
+      "P24"
+    ],
+    "intention": false,
+    "thinking": false,
+    "seed": 0,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_new_tokens": 512,
+    "discussion_prompt_file": "discussion_v3.txt",
+    "project_evaluations_skipped": true
+  },
+  "project_initial_evaluation": {
+    "A1": {},
+    "A2": {},
+    "A3": {}
+  },
+  "initial_votes": {
+    "A1": {
+      "stakeholder_group": "Eco-oriented stakeholders",
+      "vote": "{\"selected_projects\": [\"P16\", \"P23\"], \"justification\": \"P16 addresses long-term ecological resilience and biodiversity loss, which are critical for environmental sustainability. P23 directly targets environmental justice by reducing pollution in disadvantaged neighborhoods, aligning with both ecological and equity goals. Together, they deliver strong environmental benefits while advancing fairness in environmental outcomes.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P16",
+          "P23"
+        ],
+        "justification": "P16 addresses long-term ecological resilience and biodiversity loss, which are critical for environmental sustainability. P23 directly targets environmental justice by reducing pollution in disadvantaged neighborhoods, aligning with both ecological and equity goals. Together, they deliver strong environmental benefits while advancing fairness in environmental outcomes.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "Families with young children stakeholders",
+      "vote": "{\"selected_projects\": [\"P22\", \"P11\"], \"justification\": \"As a representative of families with young children, I prioritize projects that directly enhance children's daily well-being, safety, and access to healthy environments. P22, Green Schoolyard Transformation, improves outdoor learning and play spaces for children, promoting health and environmental education. P11, Urban Parks & Safe School Routes, increases neighborhood safety and access to green spaces, enabling families to walk or bike to school securely. Together, these projects support childcare, family safety, and everyday quality of life for young families.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P22",
+          "P11"
+        ],
+        "justification": "As a representative of families with young children, I prioritize projects that directly enhance children's daily well-being, safety, and access to healthy environments. P22, Green Schoolyard Transformation, improves outdoor learning and play spaces for children, promoting health and environmental education. P11, Urban Parks & Safe School Routes, increases neighborhood safety and access to green spaces, enabling families to walk or bike to school securely. Together, these projects support childcare, family safety, and everyday quality of life for young families.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Social equity stakeholders",
+      "vote": "{\"selected_projects\": [\"P23\", \"P24\"], \"justification\": \"These projects directly address social equity by targeting disadvantaged neighborhoods with high pollution levels (P23) and ensuring equal access to green space in underserved areas (P24). Together, they reduce environmental inequality, improve health outcomes for marginalized communities, and promote fair distribution of public benefits, aligning with the core values of social justice and equity.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P23",
+          "P24"
+        ],
+        "justification": "These projects directly address social equity by targeting disadvantaged neighborhoods with high pollution levels (P23) and ensuring equal access to green space in underserved areas (P24). Together, they reduce environmental inequality, improve health outcomes for marginalized communities, and promote fair distribution of public benefits, aligning with the core values of social justice and equity.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "pairwise_discussions": [
+    {
+      "pair": [
+        "A1",
+        "A2"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "Eco-oriented stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal to fund P22 and P11 aligns well with environmental sustainability, as both projects increase urban greenery, support biodiversity, and promote low-emission mobility. However, it does not prioritize pollution reduction in disadvantaged areas or the most ecologically vulnerable zones, which are key concerns for eco-oriented residents.\n\n### 2. Response to the rationale  \nWhile the focus on children’s well-being and safe school routes is valid, the environmental benefits of these projects are enhanced when paired with those that directly restore ecosystems and address environmental injustice.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P23, P16  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P24, P11  \n\n### 5. Negotiation proposal  \nProposed final budget: P16, P23  \nJustification: P16 restores native habitats and strengthens ecological resilience, while P23 directly addresses pollution in disadvantaged neighborhoods, advancing both environmental justice and long-term sustainability—core priorities for eco-oriented residents."
+        },
+        {
+          "speaker": "A2",
+          "stakeholder_group": "Families with young children stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes environmental justice (P23) and long-term ecological health (P16), which are valuable, but neither project directly improves childcare access, family safety, or housing stability—key concerns for families with young children. P16 and P23 do not address everyday family needs like safe routes to school or accessible green spaces for children.\n\n### 2. Response to the rationale  \nWhile environmental sustainability and pollution reduction in disadvantaged areas are important, the rationale overlooks how directly P11 and P24 support family well-being through safer school routes and equitable access to green spaces where children can play and families can gather.\n\n### 3. Concessions  \nProjects I am willing to give up: P16  \nProjects I insist on keeping: P11, P24  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P23 (if paired with P11 or P24)  \n\n### 5. Negotiation proposal  \nProposed final budget: P11, P24  \nJustification: P11 enhances neighborhood safety and creates protected routes to schools, directly supporting family mobility and child safety. P24 ensures equitable access to green spaces in underserved areas, giving children in all neighborhoods safe, healthy places to play and families opportunities for outdoor well-being."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A1",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A1",
+          "stakeholder_group": "Eco-oriented stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes environmental justice by targeting pollution in disadvantaged areas (P23) and expanding green access (P24), both of which align with ecological resilience and long-term sustainability. However, it does not explicitly prioritize large-scale biodiversity restoration or systemic green infrastructure improvements that enhance ecosystem health across the city.\n\n### 2. Response to the rationale  \nThe focus on equity is valid and important, and P23 and P24 do contribute meaningfully to environmental sustainability by reducing harm and increasing green space where most needed. Their emphasis on fairness complements ecological goals.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P23, P24  \n\n### 4. Acceptable alternatives  \nProjects I would accept: none  \n\n### 5. Negotiation proposal  \nProposed final budget: P23, P24  \nJustification: These projects jointly advance environmental equity, reduce pollution in vulnerable communities, and expand access to green space—delivering strong ecological and social benefits within the budget limit."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Social equity stakeholders",
+          "receiver": "A1",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P23, which directly addresses environmental injustice by targeting pollution in disadvantaged neighborhoods—a key concern for social equity. However, P16, while ecologically valuable, does not directly reduce inequality in access to public services or benefits for underserved communities.  \n\n### 2. Response to the rationale  \nThe argument for P16 emphasizes ecological resilience, which is important, but from a social equity perspective, benefits must be distributed across marginalized populations. P23 is a strong choice, but pairing it with a project that expands access to green space in underserved areas would better fulfill equity goals.  \n\n### 3. Concessions  \nProjects I am willing to give up: P16  \nProjects I insist on keeping: P23  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P24, P11  \n\n### 5. Negotiation proposal  \nProposed final budget: P23, P24  \nJustification: P23 reduces pollution in disadvantaged neighborhoods, while P24 directly increases green space access in areas with the least vegetation, ensuring equitable distribution of environmental benefits and advancing social justice."
+        }
+      ]
+    },
+    {
+      "pair": [
+        "A2",
+        "A3"
+      ],
+      "messages": [
+        {
+          "speaker": "A2",
+          "stakeholder_group": "Families with young children stakeholders",
+          "receiver": "A3",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes environmental justice and equitable access to green space, which aligns with family well-being by improving neighborhood safety and health conditions. However, it does not explicitly prioritize direct support for childcare or housing stability—key concerns for families with young children.\n\n### 2. Response to the rationale  \nThe focus on disadvantaged neighborhoods and equitable green space access is valuable and supports healthier environments for children, which benefits families. While the social equity rationale is strong, it could be strengthened by considering projects that more directly enhance daily family life.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: none  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P11, P22  \n\n### 5. Negotiation proposal  \nProposed final budget: P11, P22  \nJustification: P11 enhances neighborhood safety through protected school routes and urban green spaces, directly supporting family mobility and child safety. P22 transforms schoolyards into natural play areas, improving children’s health, learning, and daily access to safe outdoor environments—directly aligning with family priorities."
+        },
+        {
+          "speaker": "A3",
+          "stakeholder_group": "Social equity stakeholders",
+          "receiver": "A2",
+          "type": "critique",
+          "content": "### 1. Evaluation  \nThe proposal prioritizes P22 and P11, both of which contribute to equitable access to green spaces and improved environmental conditions in residential neighborhoods—aligning with social equity goals. However, it does not explicitly address the most disadvantaged communities facing the highest pollution burdens, which are central to reducing environmental inequality.\n\n### 2. Response to the rationale  \nWhile enhancing safety and green space access for families with children is important, the focus on schoolyards and routes risks overlooking neighborhoods with the greatest historical disinvestment and environmental injustice, where equity demands the strongest interventions.\n\n### 3. Concessions  \nProjects I am willing to give up: none  \nProjects I insist on keeping: P23, P24  \n\n### 4. Acceptable alternatives  \nProjects I would accept: P11, P22  \n\n### 5. Negotiation proposal  \nProposed final budget: P23, P24  \nJustification: P23 targets pollution reduction in the most disadvantaged neighborhoods, directly addressing environmental inequity. P24 expands green space access in areas with the least existing vegetation, ensuring fair distribution of public benefits and advancing social equity across the city."
+        }
+      ]
+    }
+  ],
+  "final_votes": {
+    "A1": {
+      "stakeholder_group": "Eco-oriented stakeholders",
+      "vote": "{\"selected_projects\": [\"P23\", \"P24\"], \"justification\": \"While P16 supports long-term ecological resilience, the arguments from social equity and family stakeholders highlight that P23 and P24 together deliver stronger environmental justice outcomes by targeting pollution reduction and expanding green space access in underserved communities. This combination aligns with both ecological sustainability and equity—core priorities for eco-oriented residents—while ensuring broader consensus. P24 also indirectly supports children’s well-being by creating green spaces in areas with the least access, addressing a key concern of family stakeholders. This compromise maintains strong environmental and justice outcomes, increases feasibility of agreement, and avoids project failure.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P23",
+          "P24"
+        ],
+        "justification": "While P16 supports long-term ecological resilience, the arguments from social equity and family stakeholders highlight that P23 and P24 together deliver stronger environmental justice outcomes by targeting pollution reduction and expanding green space access in underserved communities. This combination aligns with both ecological sustainability and equity—core priorities for eco-oriented residents—while ensuring broader consensus. P24 also indirectly supports children’s well-being by creating green spaces in areas with the least access, addressing a key concern of family stakeholders. This compromise maintains strong environmental and justice outcomes, increases feasibility of agreement, and avoids project failure.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A2": {
+      "stakeholder_group": "Families with young children stakeholders",
+      "vote": "{\"selected_projects\": [\"P11\", \"P24\"], \"justification\": \"While I initially prioritized P22 and P11 for their direct benefits to children's daily well-being and safe school access, I recognize the strong arguments from equity-focused stakeholders regarding the need to address environmental injustice and unequal green space distribution. P24, Equal Access to Urban Green Space, directly supports families in underserved neighborhoods by expanding green space where it is most needed, which aligns with our goal of housing stability and family well-being. P11, Urban Parks & Safe School Routes, remains essential for neighborhood safety and accessible green spaces. Together, P11 and P24 balance our core priorities—childcare, safety, and family quality of life—with a stronger commitment to equity and environmental justice, making this a more inclusive and consensus-friendly outcome that still advances the interests of families with young children.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P11",
+          "P24"
+        ],
+        "justification": "While I initially prioritized P22 and P11 for their direct benefits to children's daily well-being and safe school access, I recognize the strong arguments from equity-focused stakeholders regarding the need to address environmental injustice and unequal green space distribution. P24, Equal Access to Urban Green Space, directly supports families in underserved neighborhoods by expanding green space where it is most needed, which aligns with our goal of housing stability and family well-being. P11, Urban Parks & Safe School Routes, remains essential for neighborhood safety and accessible green spaces. Together, P11 and P24 balance our core priorities—childcare, safety, and family quality of life—with a stronger commitment to equity and environmental justice, making this a more inclusive and consensus-friendly outcome that still advances the interests of families with young children.",
+        "valid": true,
+        "error": null
+      }
+    },
+    "A3": {
+      "stakeholder_group": "Social equity stakeholders",
+      "vote": "{\"selected_projects\": [\"P23\", \"P24\"], \"justification\": \"While I acknowledge the strong case made by families for P11 and P22 in supporting children's daily well-being, my stakeholder group's core mandate is to reduce systemic inequality and ensure fair access to environmental benefits. P23 and P24 directly target the most disadvantaged neighborhoods—those with the highest pollution burdens and the least green space—thereby addressing entrenched disparities in health, safety, and environmental quality. These projects deliver the most significant equity gains within the budget constraints. I remain committed to this allocation as it best fulfills our mission of social justice, even as I recognize the value of other priorities. This proposal maintains feasibility and aligns with the shared goal of funding projects that advance both equity and sustainability.\"}",
+      "parsed_vote": {
+        "selected_projects": [
+          "P23",
+          "P24"
+        ],
+        "justification": "While I acknowledge the strong case made by families for P11 and P22 in supporting children's daily well-being, my stakeholder group's core mandate is to reduce systemic inequality and ensure fair access to environmental benefits. P23 and P24 directly target the most disadvantaged neighborhoods—those with the highest pollution burdens and the least green space—thereby addressing entrenched disparities in health, safety, and environmental quality. These projects deliver the most significant equity gains within the budget constraints. I remain committed to this allocation as it best fulfills our mission of social justice, even as I recognize the value of other priorities. This proposal maintains feasibility and aligns with the shared goal of funding projects that advance both equity and sustainability.",
+        "valid": true,
+        "error": null
+      }
+    }
+  },
+  "orchestrator": {
+    "method": "deterministic_majority_aggregation",
+    "decision": {
+      "match": "partial_agreement",
+      "final_vote": [
+        "P24",
+        "P23"
+      ],
+      "project_vote_counts": {
+        "P11": 1,
+        "P23": 2,
+        "P24": 3
+      }
+    }
+  },
+  "metrics": {
+    "selected_projects": [
+      "P24",
+      "P23"
+    ],
+    "total_cost": 100.0,
+    "budget": 100,
+    "feasible": true,
+    "budget_violation": 0.0,
+    "agent_utilities": {
+      "A1:Eco": 10.0,
+      "A2:Family": 2.0,
+      "A3:Egalitarian": 10.0
+    },
+    "welfare": 7.333333333333333,
+    "min_utility": 2.0,
+    "optimal_welfare": 8.0,
+    "normalized_welfare": 0.9166666666666666,
+    "regret": 0.666666666666667
+  }
+}
